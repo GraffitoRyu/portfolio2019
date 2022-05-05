@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/*
+ * Noto Sans CJK 본고딕 선언
+ * 2018 INCT 인터렉티브디자인부 작성
+*/
+
+
+/* Noto Sans CJK - Thin */
+@font-face {
+  font-family: 'ns-cjk';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/NotoSansCJKkr-Thin.eot);
+  src: url(../fonts/NotoSansCJKkr-Thin.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansCJKkr-Thin.woff) format('woff'),
+       url(../fonts/NotoSansCJKkr-Thin.woff) format('truetype');
+}
+/* Noto Sans CJK - Light */
+@font-face {
+  font-family: 'ns-cjk';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSansCJKkr-Light.eot);
+  src: url(../fonts/NotoSansCJKkr-Light.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansCJKkr-Light.woff) format('woff'),
+       url(../fonts/NotoSansCJKkr-Light.woff) format('truetype');
+}
+/* Noto Sans CJK - Regular */
+@font-face {
+  font-family: 'ns-cjk';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSansCJKkr-Regular.eot);
+  src: url(../fonts/NotoSansCJKkr-Regular.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansCJKkr-Regular.woff) format('woff'),
+       url(../fonts/NotoSansCJKkr-Regular.woff) format('truetype');
+}
+/* Noto Sans CJK - Medium */
+@font-face {
+  font-family: 'ns-cjk';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSansCJKkr-Medium.eot);
+  src: url(../fonts/NotoSansCJKkr-Medium.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansCJKkr-Medium.woff) format('woff'),
+       url(../fonts/NotoSansCJKkr-Medium.woff) format('truetype');
+}
+/* Noto Sans CJK - Bold */
+@font-face {
+  font-family: 'ns-cjk';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSansCJKkr-Bold.eot);
+  src: url(../fonts/NotoSansCJKkr-Bold.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansCJKkr-Bold.woff) format('woff'),
+       url(../fonts/NotoSansCJKkr-Bold.woff) format('truetype');
+}

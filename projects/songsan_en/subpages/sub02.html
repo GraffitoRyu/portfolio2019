@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONGSAN</title>
+    <link rel="stylesheet" href="../css/songsan_en.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/mc-slider.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/header-logo.png" alt="SONGSAN"></a>
+        </div>
+        <div class="util-nav">
+          <ul>
+            <li><a href="http://itsolle.com/">It's OLLE</a></li>
+            <li class="lang">
+              <button class="lang-btn">ENGLISH</button>
+              <ul class="lang-list">
+                <li><a href="./index.html">ENGLISH</a></li>
+                <li><a href="../../songsan_jp/index.html">JAPANESE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li><a href="sub01.html">COMPANY</a></li>
+            <li class="on"><a href="sub02.html">VISION</a></li>
+            <li><a href="sub03.html">R&D</a></li>
+            <li><a href="sub04.html">BRAND</a></li>
+            <li><a href="sub05.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="text/javascript">
+      var mainScroll = null;
+      $(window).scroll(function(){
+        clearTimeout(mainScroll);
+        mainScroll = setTimeout(scrollDone, 50);
+      });
+      function scrollDone() {
+        var nowPosition = $(window).scrollTop();
+        if(nowPosition >= 500) {
+          $('#header').addClass('white');
+        } else if(nowPosition < 500) {
+          $('#header').removeClass('white');
+        }
+      }
+    </script>
+
+
+    <div id="contents" class="sc-container">
+      <div class="go-to-top">
+        TOP
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.go-to-top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').stop().animate({scrollTop: 0}, 600);
+          });
+        });
+      </script>
+      <section class="sc-item sv">
+        <h2 class="category">Vision</h2>
+        <p class="sv-text">
+          Songsan Co., Ltd has been succeeding and developing<br>
+          a happy food culture through healthy<br>
+          and delicious food varieties and continuing<br>
+          our effort to settle the happy food culture.
+        </p>
+      </section>
+
+      <section id="sub02-1" class="sc-item sub02-1">
+        <h3><img src="../img/sub02-title.png" alt="Vision of Songsan"></h3>
+        <ul class="sub02-1-list">
+          <li>
+            <div class="icon">
+              <img src="../img/sub02-icon-1.png" alt="fresh">
+            </div>
+            <h4>FRESH</h4>
+            <p>
+              <span>
+                "Tasty food"<br>
+                enjoyed by anyone
+              </span>
+              Our fresh ingredients<br>
+              and taste deliver pride.
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="../img/sub02-icon-2.png" alt="strict">
+            </div>
+            <h4>STRICT</h4>
+            <p>
+              <span>
+                "Strict" safety and quality<br>
+                standard to realize the highest<br>
+                customer value
+              </span>
+              We guarantee trust<br>
+              based on strict standard.
+            </p>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="../img/sub02-icon-3.png" alt="healthy">
+            </div>
+            <h4>HEALTHY</h4>
+            <p>
+              <span>
+                Premium side dish, lunch box<br>
+                side dish "Leading soy sauce<br>
+                braised meat in Korea"
+              </span>
+              We are creating<br>
+              a happy future with<br>
+              healthy dietary life culture.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="sub02-2" class="sc-item sub02-2">
+        <div class="title-box">
+          <div class="title-text">
+            <h3>
+              Management<br>
+              <span>Principle</span>
+            </h3>
+            <p>
+              Persistence for healthy and tasty food is<br>
+              our irrepraceable professional mind set.
+            </p>
+          </div>
+        </div>
+        <div class="contents-box principle">
+          <ol>
+            <li>
+              <div class="count">
+                0<span>1</span>
+              </div>
+              <p>
+                In addition to the satisfaction for customers' requirements<br>
+                as well as legal and regulatory requirements,<br>
+                we will fulfill social responsibilities for safe, healthy and happy food culture.
+              </p>
+            </li>
+            <li>
+              <div class="count">
+                0<span>2</span>
+              </div>
+              <p>
+                In pursuit of the highest customer value,<br>
+                we will guarantee the satisfaction of customer and food safety requirements<br>
+                throughout the entire process of development, raw ingredients,<br>
+                processing, storage and shipping.
+              </p>
+            </li>
+            <li>
+              <div class="count">
+                0<span>3</span>
+              </div>
+              <p>
+                We will continuously pursue changes and innovations<br>
+                for factors consisting this value system,<br>
+                and ensure the compliance to the Food Safety Management System<br>
+                (FSSC 22000, ISO 22000, ISO 22002-1, and HACCP) regulated by the company.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="../img/footer-logo.png" alt="SONGSAN">
+      </div>
+      <div class="footer-info">
+        <p>
+          115-84, Gwonyul-ro 29beon-gil, Jangheung-myeon, Yangju-si, Gyeonggi-do, Republic of Korea<br>
+          <span>Tel. +82-31-877-0668</span>
+          <span>Fax. +82-31-877-0664</span>
+        </p>
+        <p>Copyright ⓒ 2018 SONGSAN Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

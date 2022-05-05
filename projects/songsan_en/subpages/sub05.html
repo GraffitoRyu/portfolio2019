@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONGSAN</title>
+    <link rel="stylesheet" href="../css/songsan_en.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/mc-slider.js"></script>
+    <script type="text/javascript" src="../js/sub-tabmenu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/header-logo.png" alt="SONGSAN"></a>
+        </div>
+        <div class="util-nav">
+          <ul>
+            <li><a href="http://itsolle.com/">It's OLLE</a></li>
+            <li class="lang">
+              <button class="lang-btn">ENGLISH</button>
+              <ul class="lang-list">
+                <li><a href="./index.html">ENGLISH</a></li>
+                <li><a href="../../songsan_jp/index.html">JAPANESE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li><a href="sub01.html">COMPANY</a></li>
+            <li><a href="sub02.html">VISION</a></li>
+            <li><a href="sub03.html">R&D</a></li>
+            <li><a href="sub04.html">BRAND</a></li>
+            <li class="on"><a href="sub05.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="text/javascript">
+      var mainScroll = null;
+      $(window).scroll(function(){
+        clearTimeout(mainScroll);
+        mainScroll = setTimeout(scrollDone, 50);
+      });
+      function scrollDone() {
+        var nowPosition = $(window).scrollTop();
+        if(nowPosition >= 500) {
+          $('#header').addClass('white');
+        } else if(nowPosition < 500) {
+          $('#header').removeClass('white');
+        }
+      }
+    </script>
+
+
+    <div id="contents" class="sc-container">
+      <div class="go-to-top">
+        TOP
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.go-to-top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').stop().animate({scrollTop: 0}, 600);
+          });
+        });
+      </script>
+      <section class="sc-item sv">
+        <h2 class="category">Contact Us</h2>
+        <p class="sv-text">
+          Songsan Co., Ltd has been succeeding and developing<br>
+          a happy food culture through healthy<br>
+          and delicious food varieties and continuing<br>
+          our effort to settle the happy food culture.
+        </p>
+      </section>
+
+      <section id="sub05-1" class="sc-item sub05-1">
+        <h3>CONTACT US</h3>
+        <div class="map-box">
+          <div class="map">
+            <img src="../img/map-1.png" alt="songsan map">
+          </div>
+          <div class="map-title">
+            <img src="../img/map-title-1.png" alt="Songsan Co., Ltd.">
+          </div>
+          <p>
+            115-84 Gwonyulro 29-beongil, Jangheung-myeon, Yangju-si, Gyeonggi-do
+          </p>
+        </div>
+        <div class="map-box">
+          <div class="map">
+            <img src="../img/map-2.png" alt="songsan farming assciation Co.">
+          </div>
+          <div class="map-title">
+            <img src="../img/map-title-2.png" alt="songsan farming assciation Co.">
+          </div>
+          <p>
+            115-84 Gwonyulro 29-beongil, Jangheung-myeon, Yangju-si, Gyeonggi-do
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="../img/footer-logo.png" alt="SONGSAN">
+      </div>
+      <div class="footer-info">
+        <p>
+          115-84, Gwonyul-ro 29beon-gil, Jangheung-myeon, Yangju-si, Gyeonggi-do, Republic of Korea<br>
+          <span>Tel. +82-31-877-0668</span>
+          <span>Fax. +82-31-877-0664</span>
+        </p>
+        <p>Copyright ⓒ 2018 SONGSAN Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

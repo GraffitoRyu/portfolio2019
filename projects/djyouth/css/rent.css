@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+/* 대관신청 CSS */
+
+/**
+ * - 대관신청 안내 (rent01.php)
+ * - 대관신청 예약 - 공간 선택 (rent02.php)
+ * - 대관신청 예약 - 대관 신청정보 입력 (rent03.php)
+ * - 대관신청정보- plugin/wz.booking.pension/order.list.skin.php
+ * - 내 대관신청 정보 - plugin/wz.booking.pension/order.view.skin.php
+**/
+
+/* 대관 신청 - rent01 */
+.inct-sc.rent ul.text-list {padding:0 30px 40px;}
+.inct-sc.rent ul.text-list li {height:30px;  line-height:30px;}
+.inct-sc.rent ul.text-list li:before {margin-top:12.5px;}
+.inct-sc.rent ul.space-operate-info {width:100%;  overflow:hidden;  text-align:center;  font-size:0;}
+.inct-sc.rent ul.space-operate-info li {display:inline-block;  width:370px;  height:110px;  overflow:hidden;}
+.inct-sc.rent ul.space-operate-info li .icon-box {float:left;  width:110px;  height:110px;  border-top-left-radius:10px;  border-bottom-right-radius:10px;  border:1px solid #e1e1e1;  background:#fafafa;}
+.inct-sc.rent ul.space-operate-info li .icon-box p {font-size:15px;  text-align:center;  line-height:54px;  font-weight:300;  letter-spacing:-0.5px;}
+.inct-sc.rent ul.space-operate-info li .info-text {float:left;  width:calc(100% - 110px);  height:110px;  }
+.inct-sc.rent ul.space-operate-info li .info-text p {width:100%;  padding:5px 20px;  font-size:15px;  color:#777;  line-height:24px;  text-align:left;  letter-spacing:-0.5px;}
+.dododo .inct-sc.rent ul.space-operate-info li .info-text.line4 p {padding:6px 20px;}
+.inct-sc.rent p.sc-title-text {padding:0 30px 40px;  font-size:15px;  color:#777;  text-align:left;  line-height:15px;}
+.inct-sc.rent ul.rent-process {width:100%;  overflow:hidden;  font-size:0;  text-align:center;}
+.inct-sc.rent ul.rent-process li {display:inline-block;  vertical-align:top;  width:140px;  height:140px;  border-radius:4px;  border:1px solid #e1e1e1;  font-size:15px;  color:#555;  line-height:138px;  letter-spacing:-0.5px;  background:#fafafa;}
+.inct-sc.rent ul.rent-process li.arrow {width:40px;  border:0;  background:transparent no-repeat center center;}
+.trip .inct-sc.rent ul.rent-process li.arrow {background-image: url(../img/arrow-trip.png);}
+.rest .inct-sc.rent ul.rent-process li.arrow {background-image: url(../img/arrow-rest.png);}
+.dododo .inct-sc.rent ul.rent-process li.arrow {background-image: url(../img/arrow-dododo.png);}
+.inct-sc.rent .go-to-rent-btn {width:100%;  overflow:hidden;  font-size:0;  text-align:center;  padding-bottom:100px;}
+.inct-sc.rent .go-to-rent-btn a {display:inline-block;  margin:0 5px;  line-height:48px;  font-size:18px;  color:white;}
+.inct-sc.rent .go-to-rent-btn a.rent-rule {border-color:#6cbdd1;  background:#6cbdd1;}
+.trip .inct-sc.rent .go-to-rent-btn a.go-to-rent {border-color:#2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc.rent .go-to-rent-btn a.go-to-rent {border-color:#005cb9;  background:#005cb9;}
+.dododo .inct-sc.rent .go-to-rent-btn a.go-to-rent {border-color:#fa4c06;  background:#fa4c06;}
+@media only screen and (max-width:1199px) {
+  .inct-sc.rent ul.space-operate-info li {width:320px;}
+}
+@media only screen and (max-width:1023px) {
+  .inct-sc.rent ul.text-list li {height:auto;}
+  .inct-sc.rent ul.text-list li:before {display:inline-block;  margin-left:-15px;}
+  .inct-sc.rent ul.space-operate-info li {width:340px;  margin-bottom:10px;}
+  .inct-sc.rent ul.space-operate-info li .info-text {border:1px solid #e1e1e1;  border-left:0;  border-bottom-right-radius:10px;}
+  .inct-sc.rent ul.rent-process li {margin-bottom:30px;}
+}
+@media only screen and (max-width:767px) {
+  .inct-sc.rent .sc-item {padding:50px 0;}
+  .inct-sub-contents h4.sc-item-title {border:0;  padding-left:0;  margin-top:40px;  text-align:center;}
+  .inct-sc.rent ul.text-list li {font-size:15px;  line-height:25px;  word-break:keep-all;  margin-bottom:15px;}
+  .inct-sc.rent ul.text-list li:before {margin-top:9px;}
+  .inct-sc.rent ul.space-operate-info li {width:100%;  height:auto;}
+  .inct-sc.rent ul.space-operate-info li .icon-box {float:none;  width:100%;  border-radius:0;  height:auto;}
+  .inct-sc.rent ul.space-operate-info li .icon-box img {display:none;}
+  .inct-sc.rent ul.space-operate-info li .info-text {float:none;  width:100%;  border-left:1px solid #e1e1e1;  border-top:0;}
+  .inct-sc.rent p.sc-title-text {font-size:15px;  line-height:20px;  text-align:center;}
+  .inct-sc.rent ul.rent-process li {width:100%;  height:40px;  line-height:38px;  margin:0;}
+  .inct-sc.rent ul.rent-process li.arrow {display:block;  transform:rotate(90deg);  width:100%;  height:40px;  margin:0 auto;}
+  .inct-sc.rent .go-to-rent-btn a.go-to-rent {margin-bottom:10px;}
+}
+
+
+
+/* 대관 공간 선택 - rent02 */
+.inct-sc.rent-select-space .sc-item {padding-bottom:50px;  margin-bottom:50px;  border-bottom:1px solid #e1e1e1;}
+.sc-item.pb0 {padding-bottom:0;}
+.inct-sub-contents.rent .blueprint-box {margin-bottom:60px;}
+.rest .inct-sub-contents.rent .blueprint-box {display:none;}
+.rent .inct-sc.rent-select-space h3.sc-title {padding-bottom:30px;}
+.trip.rent .inct-sc.rent-select-space h3.sc-title {color:#e51a94;}
+.rest.rent .inct-sc.rent-select-space h3.sc-title {color:#005cb9;}
+.dododo.rent .inct-sc.rent-select-space h3.sc-title {color:#fa4c06;}
+.rent .inct-sc.rent-select-space h3.sc-title span.level-info {font-size:20px;  color:#999;  vertical-align:baseline;}
+.rent .inct-sc.rent-select-space p.rent-slogan {font-size:20px;  color:#777;  line-height:20px;  text-align:center;  padding-bottom:20px;}
+.rent .inct-sc.rent-select-space p.rent-slogan + p {font-size:15px;  color:#777;  line-height:15px;  text-align:center;  font-weight:300;  letter-spacing:-0.5px;  padding-bottom:65px;}
+.rent .inct-sc.rent-select-space .rent-space {clear:both;  width:100%;  overflow:hidden;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider {float:left;  width:49.122807017543859649122807017544%;  height:350px;  margin-right:1.7543859649122807017543859649123%;  position:relative;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb {width:100%;  height:350px;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li {float:left;  width:100%;  height:350px;  -webkit-background-size:cover;  background-size:cover;  background-position:center center;  background-repeat:no-repeat;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-1 {background-image:url(../img/feature-thumb-dododo-2.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-2 {background-image:url(../img/feature-thumb-dododo-3.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-3 {background-image:url(../img/feature-item-dododo-bg-50.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-4 {background-image:url(../img/feature-thumb-rest-4.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-5 {background-image:url(../img/intro-slide-rest-1-5.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li.rent-space-thumb-1-trip1 {background-image:url(../img/feature-thumb-trip-2.png);}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-controls {position:absolute;  z-index:100;  top:145px;  width:60px;  height:60px;  background-color:rgba(0,0,0,0.5);  background-repeat:no-repeat;  opacity:0;  transition:all 0.4s;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-left {left:0;  background-image:url(../img/rent-thumb-left.png);  background-position:17px center;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-right {right:0;  background-image:url(../img/rent-thumb-right.png);  background-position:21px center;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-slider:hover button.rent-space-controls {opacity:1;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info {float:left;  width:49.122807017543859649122807017544%;  height:350px;  padding:29px;  border:1px solid #e1e1e1;  background: #f1f1f1;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 {width:100%;  height:100px;  border-radius:4px;  border:1px solid #e1e1e1;  background:white;  overflow:hidden;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li {float:left;  width:33.33333333%;  height:100%;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li .icon {width:100%;  height:54px;  padding-top:19px;  text-align:center;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li .icon + p {width:100%;  font-size:15px;  color:#777;  text-align:center;  line-height:20px;  letter-spacing:-0.5px;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 {width:100%;  margin-top:15px;  padding-top:14px;  border-top:1px solid #929292;  overflow:hidden;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 .space-info-title {float:left;  width:29.166666666666666666666666666667%;  padding-left:15px;  font-size:15px;  color:#555;  line-height:25px;  text-align:left;  letter-spacing:-0.5px;  font-weight:500;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 p.space-info-text {float:left;  width:70.833333333333333333333333333333%;  font-size:15px;  color:#555;  font-weight:300;  line-height:25px;  letter-spacing:-0.5px;}
+.rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 p.space-info-text span.notice {font-size:13px;  line-height:13px;  color:#777;}
+.rent .inct-sc.rent-select-space .rent-space .reservation-btn-box {clear:both;  width:100%;  padding-top:40px;}
+.rent .inct-sc.rent-select-space .rent-space .reservation-btn-box a {width:350px;  height:50px;  text-align:center;  line-height:48px;  font-size:20px;  color:white;}
+.trip.rent .inct-sc.rent-select-space .rent-space .reservation-btn-box a {border-color:#2dc8c2;  background:#2dc8c2;}
+.rest.rent .inct-sc.rent-select-space .rent-space .reservation-btn-box a {border-color:#005cb9;  background:#005cb9;}
+.dododo.rent .inct-sc.rent-select-space .rent-space .reservation-btn-box a {border-color:#fa4c06;  background:#fa4c06;}
+@media only screen and (max-width:1023px) {
+  .rent .inct-sc.rent-select-space .mobile-select-space {width:100%;  height:50px;  margin-bottom:40px;  overflow:hidden;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .mobile-select-space-btn {float:left;  width:20px;  height:50px;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .mobile-select-space-btn a {width:100%;	height:100%;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .left-btn {background:url(../img/mobile-select-space-left.png) no-repeat left center;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .right-btn {background:url(../img/mobile-select-space-right.png) no-repeat right center;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .space-list-box {float:left;  width:calc(100% - 40px);  height:50px;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list {width:100%;  height:100%;  overflow:hidden;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list li {float:left;  width:33.333333333333%;  height:100%;  padding:0 5px;}
+  .rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list li button {width:100%;  height:100%;  padding:15px 0;  text-align:center;  line-height:20px;  font-size:14px;  color:white;  font-weight:200;  letter-spacing:0;}
+  .trip.rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list li button {background:#2dc8c2;}
+  .rest.rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list li button {background:#005cb9;}
+  .dododo.rent .inct-sc.rent-select-space .mobile-select-space .space-list-box ul#space-list li button {background:#fa4c06;}
+  .rent .inct-sc.rent-select-space h3.sc-title {padding-bottom:20px;}
+  .rent .inct-sc.rent-select-space h3.sc-title span.level-info {font-size:16px;}
+  .rent .inct-sc.rent-select-space p.rent-slogan {font-size:16px;  line-height:16px;  padding-bottom:10px;}
+  .rent .inct-sc.rent-select-space p.rent-slogan + p {font-size:14px;  line-height:14px;  padding-bottom:40px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider {float:none;  width:100%;  height:auto;  margin-right:0;  margin-bottom:20px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb {width:100%;  height:300px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb li {height:100%;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-controls {top:125px;  opacity:1;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info {float:none;  width:100%;  height:auto;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 p.space-info-text {padding-right:20px;}
+}
+@media only screen and (max-width:767px) {
+  .rent .inct-sc.rent-select-space p.rent-slogan {padding-top:30px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider ul#rent-space-thumb {height:150px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-controls {top:60px;  width:40px;  height:40px;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-left {background-image:url(../img/rent-thumb-left-320.png);  background-position:center;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-slider button.rent-space-right {background-image:url(../img/rent-thumb-right-320.png);  background-position:center;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info {padding:0;  border:0;  background:transparent;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 {height:auto;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li {float:none;  width:80%;  margin:0 auto 10px;  padding:10px 0;  font-size:0;  text-align:center;  border-bottom:1px solid #e1e1e1;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li:last-child {margin-bottom:0; border:0;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li .icon {display:inline-block;  width:40px;  height:40px;  line-height:40px;  padding:0;  vertical-align:top;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info ul.rent-space-info-1 li .icon + p {display:inline-block;  width:120px;  height:40px;  line-height:40px;  padding-left:15px;  vertical-align:top;}
+  .rent .inct-sc.rent-select-space .rent-space .rent-space-info .rent-space-info-2 p.space-info-text {font-size:13px;}
+  .rent .inct-sc.rent-select-space .rent-space .reservation-btn-box a {width:100%;}
+}
+
+
+
+
+
+
+/* 대관 예약 - rent03 */
+.inct-sc .sc-left {float:left;  width:48.684210526315789473684210526316%;  margin-right:2.6315789473684210526315789473684%;  padding-bottom:40px;}
+.inct-sc .sc-right {float:left;  width:48.684210526315789473684210526316%;  padding-bottom:40px;}
+h3.sc-title.rent {padding-bottom:50px;}
+@media only screen and (max-width:1023px) {
+  .inct-sc .sc-left {float:none;  width:100%;  margin-right:0;  padding:0;  margin-bottom:80px;}
+  .inct-sc .sc-right {float:none;  width:100%;  padding-bottom:0;  margin-bottom:20px;}
+}
+@media only screen and (max-width:767px) {
+  .inct-sc .sc-left {margin-bottom:40px;}
+}
+/* 대관할 공간의 요약 정보 */
+.space-summary-info {width:100%;  padding-bottom:100px;  text-align:center;}
+.space-summary-info span.circle-side-btn {display:inline-block;  width:auto;  padding:0 20px;  margin-bottom:15px;}
+.space-summary-info span.circle-side-btn:hover {background:white;}
+.trip .space-summary-info span.circle-side-btn {color:#e51a94;}
+.rest .space-summary-info span.circle-side-btn {color:#005cb9;}
+.dododo .space-summary-info span.circle-side-btn {color:#fa4c06;}
+.space-summary-info h3.sc-title {font-size:25px;  line-height:25px;  padding-bottom:15px;}
+.trip .space-summary-info h3.sc-title {color:#e51a94;}
+.rest .space-summary-info h3.sc-title {color:#005cb9;}
+.dododo .space-summary-info h3.sc-title {color:#fa4c06;}
+.space-summary-info p.space-info {font-size:15px;  color:#555;  text-align:center;  line-height:15px;  letter-spacing:0;}
+@media only screen and (max-width:1199px) {
+  .inct-sub-contents .space-summary-info {padding-bottom:60px;}
+}
+@media only screen and (max-width:767px) {
+  .inct-sub-contents .space-summary-info {padding:0 20px;}
+  .inct-sub-contents .space-summary-info span.circle-side-btn {display:none;}
+  .inct-sub-contents .space-summary-info p.space-info {padding:20px 0;}
+}
+
+/* 날짜선택 */
+.inct-sc .rent-calendar {width:100%;}
+/* 날짜선택 헤더 */
+.inct-sc .rent-calendar-header {width:100%;  height:60px;  text-align:center;  font-size:0;}
+.inct-sc .rent-calendar-header button.rent-calendar-btn {display:inline-block;  width:60px;  height:60px;  vertical-align:top;}
+.inct-sc .rent-calendar-header button#rent-calendar-left {background:url(../img/rent-left.png) no-repeat center center;}
+.inct-sc .rent-calendar-header button#rent-calendar-right {background:url(../img/rent-right.png) no-repeat center center;}
+.inct-sc .rent-calendar-header h5.rent-calendar-date {display:inline-block;  width:auto;  height:60px;  padding-left:4px;  font-size:25px;  color:#555;  line-height:60px;  vertical-align:top;}
+/* 날짜 선택 - 달력 */
+.inct-sc table#rent-calendar {width:100%;  border-top-left-radius:10px;  border-top-right-radius:10px;  overflow:hidden;}
+.inct-sc table#rent-calendar th {width:14.285714285714285714285714285714%;  height:50px;  background:#999;  font-size:15px;  color:white;  text-align:center;  font-weight:400;  position:relative;}
+.inct-sc table#rent-calendar th:after {content:'';  position:absolute;  top:15px;  right:0;  display:block;  width:1px;  height:20px;  background:#e1e1e1;}
+.inct-sc table#rent-calendar th:last-child:after {display:none;}
+.inct-sc table#rent-calendar td {width:14.285714285714285714285714285714%;  height:50px;}
+.inct-sc table#rent-calendar td button {width:100%;  height:100%;  border:1px solid #e1e1e1;  border-top:0;  border-left:0;  font-size:16px;  color:#555;  letter-spacing:-0.5px;}
+.inct-sc table#rent-calendar td:first-child button {border-left:1px solid #e1e1e1;}
+.inct-sc table#rent-calendar td.not-this-month button {color:#ccc;  background:#efefef;}
+.inct-sc table#rent-calendar td.passed-day button {color:#ccc;}
+.trip .inct-sc table#rent-calendar td.today button {border-color:#2dc8c2;  border-top:1px solid #2dc8c2;  border-left:1px solid #2dc8c2;}
+.rest .inct-sc table#rent-calendar td.today button {border-color:#005cb9;  border-top:1px solid #005cb9;  border-left:1px solid #005cb9;}
+.dododo .inct-sc table#rent-calendar td.today button {border-color:#fa4c07;  border-top:1px solid #fa4c07;  border-left:1px solid #fa4c07;}
+.inct-sc table#rent-calendar td.selected button {color:white;}
+.trip .inct-sc table#rent-calendar td.selected button {border-color:#2dc8c2;  border-top:1px solid #2dc8c2;  border-left:1px solid #2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc table#rent-calendar td.selected button {border-color:#005cb9;  border-top:1px solid #005cb9;  border-left:1px solid #005cb9;  background:#005cb9;}
+.dododo .inct-sc table#rent-calendar td.selected button {border-color:#fa4c07;  border-top:1px solid #fa4c07;  border-left:1px solid #fa4c07;  background:#fa4c07;}
+.inct-sc table#rent-calendar td.full button {color:#ccc;  background-color:#f8f8f8;}
+/* 날짜 선택 - 달력 안내 */
+.inct-sc ul.rent-notice {width:100%;  overflow:hidden;}
+.inct-sc ul.rent-notice li {float:left;  height:45px;  padding-top:20px;  overflow:hidden;}
+.inct-sc ul.rent-notice li:nth-child(1) {width:34%;}
+.inct-sc ul.rent-notice li:nth-child(2) {width:35%;}
+.inct-sc ul.rent-notice li:nth-child(3) {width:31%;}
+.inct-sc ul.rent-notice li .rent-notice-box {float:left;  width:40px;  height:25px;}
+.trip .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #2dc8c2;}
+.trip .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#2dc8c2;}
+.rest .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #005cb9;}
+.rest .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#005cb9;}
+.dododo .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #fa4c07;}
+.dododo .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#fa4c07;}
+.inct-sc ul.rent-notice li .rent-notice-box.passed {border:1px solid #dadada;  background-color:#f8f8f8;}
+.inct-sc ul.rent-notice li p.rent-notice-text {float:left;  font-size:14px;  color:#555;  line-height:25px;  padding-left:20px;}
+@media only screen and (max-width:1199px) {
+  .inct-sc ul.rent-notice li:nth-child(1) {width:28%;}
+  .inct-sc ul.rent-notice li:nth-child(2) {width:32%;}
+  .inct-sc ul.rent-notice li:nth-child(3) {width:40%;}
+}
+@media only screen and (max-width:1023px) {
+  .inct-sc .sc-left h4.sc-item-title {margin-bottom:0;}
+}
+@media only screen and (max-width:767px) {
+  .inct-sc .sc-left h4.sc-item-title {margin-top:20px;}
+	.inct-sc ul.rent-notice li {float:none;}
+.inct-sc ul.rent-notice li:nth-child(1) {width:100%;}
+.inct-sc ul.rent-notice li:nth-child(2) {width:100%;}
+.inct-sc ul.rent-notice li:nth-child(3) {width:100%;}
+}
+/* 모바일 버전 날짜 선택 */
+.inct-sc form.select-rent-date {width:100%;  padding-top:30px;}
+.inct-sc form.select-rent-date fieldset {width:100%;  overflow:hidden;}
+.inct-sc form.select-rent-date fieldset select.select-rent-box {width:100%;  height:40px;  font-size:15px;  color:#777;  font-weight:300;  letter-spacing:-0.5px;  padding-left:20px;  background:url(../img/mobile-mc-select.png) no-repeat right center;  border:1px solid #e1e1e1;  border-radius:4px;  margin-bottom:10px;}
+
+/* 시간선택 */
+.inct-sc ul.select-time {width:100%;  margin-bottom:65px;  border-right:1px solid #dadada;  border-bottom:1px solid #dadada;  overflow:hidden;}
+.inct-sc ul.select-time li {float:left;  width:20%;  height:50px;}
+.inct-sc ul.select-time li button {width:100%;  height:50px;  border:1px solid #dadada;  border-bottom:0;  border-right:0;  font-size:16px;  color:#555;  text-align:center;  line-height:48px;  letter-spacing:-0.5px;}
+.inct-sc ul.select-time li.booked button {color:#ccc;  background:#f8f8f8;}
+.trip .inct-sc ul.select-time li.selected button {color:white;  border-color:#2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc ul.select-time li.selected button {color:white;  border-color:#005cb9;  background:#005cb9;}
+.dododo .inct-sc ul.select-time li.selected button {color:white;  border-color:#fa4c07;  background:#fa4c07;}
+@media only screen and (max-width:1199px) {
+  .inct-sc .sc-right ul.text-list li {font-size:13px;  height:auto;}
+}
+@media only screen and (max-width:767px) {
+  .inct-sc .sc-right ul.text-list li {padding-left:15px;}
+  .inct-sc .sc-right ul.text-list li:before {display:inline-block;  margin-left:-15px;}
+  .inct-sc ul.select-time li button {font-size:13px;  letter-spacing:0;}
+}
+/* 예약정보 기입 */
+.inct-sc form.rent-info-form {width:100%;}
+.inct-sc form.rent-info-form fieldset {width:100%;  overflow:hidden;}
+.inct-sc form.rent-info-form fieldset label.view {float:left;  width:20%;  height:50px;  margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#555;  text-align:center;  line-height:48px;  letter-spacing:0;  font-weight:500;}
+.inct-sc form.rent-info-form fieldset label.view:after {content:'';  font-size:0;  display:block;  float:right;  width:1px;  height:20px;  margin:14px 0;  background:#dadada;}
+.inct-sc form.rent-info-form fieldset label.purpose-label {height:100px;  line-height:98px;}
+.inct-sc form.rent-info-form fieldset label.purpose-label:after {margin:39px 0;}
+.inct-sc form.rent-info-form fieldset input {float:left;  height:50px;  padding:0 15px;    margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#aaa;  line-height:48px;  letter-spacing:0;  font-weight:300;}
+.inct-sc form.rent-info-form fieldset input.half-input-member {width:20%;  padding-right:0;}
+.inct-sc form.rent-info-form fieldset input.half-input-contact {width:30%;}
+.inct-sc form.rent-info-form fieldset span.limit-member {float:left;  display:block;  width:9.5%;  height:50px;  margin-right:0.5%;  margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#555;  line-height:48px;}
+.inct-sc form.rent-info-form fieldset textarea#purpose {width:80%;  height:100px;  padding:15px;  margin-bottom:25px;  border-left:0;  border-right:0;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#aaa;  line-height:20px;  letter-spacing:0;  font-weight:300;}
+@media only screen and (max-width:1199px) {
+  /*.inct-sc form.rent-info-form fieldset input#member-count {width:50%;}
+  .inct-sc form.rent-info-form fieldset span.limit-member {width:30%;}*/
+}
+@media only screen and (max-width:767px) {
+  .inct-sc form.rent-info-form fieldset label.view {clear:both;  float:none;  width:100%;  height:50px;  margin-bottom:0;  border-top-width:2px;  border-bottom-color:#e1e1e1;  line-height:48px;  background:#f8f8f8;}
+  .inct-sc form.rent-info-form fieldset label.view:after {display:none;}
+  .inct-sc form.rent-info-form fieldset label.purpose-label {height:50px;  line-height:48px;}
+  .inct-sc form.rent-info-form fieldset label.purpose-label:after {margin:0;}
+  .inct-sc form.rent-info-form fieldset input {float:none;  height:50px;  padding:0 15px;    margin-bottom:10px;  border-top:0;  border-bottom-color:#e1e1e1;  font-size:13px;}
+  .inct-sc form.rent-info-form fieldset input.half-input-member {float:left;  width:50%;	text-align:right;  padding-right:10px;}
+  .inct-sc form.rent-info-form fieldset span.limit-member {width:50%;  margin-right:0;  margin-bottom:0;  border-top:0;  border-bottom-color:#e1e1e1;  font-size:13px;  padding-left:10px;}
+	.inct-sc form.rent-info-form fieldset input.half-input-contact {width:100%;   text-align:center;}
+  .inct-sc form.rent-info-form fieldset textarea#purpose {width:100%;  border-top:0;  border-bottom-color:#e1e1e1;  font-size:13px;}
+}
+
+/* 신청정보 확인 버튼 */
+.inct-sc .rent-info-check {clear:both;  width:100%;  padding-bottom:40px;  text-align:center;  font-size:0;}
+.inct-sc .rent-info-check button {color:white;}
+.trip .inct-sc .rent-info-check button {border-color:#2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc .rent-info-check button {border-color:#005cb9;  background:#005cb9;}
+.dododo .inct-sc .rent-info-check button {border-color:#fa4c07;  background:#fa4c07;}
+@media only screen and (max-width:767px) {
+	.inct-sc .rent-info-check button {width:100%;}
+}
+/* 신청정보 */
+.inct-sc ul.rent-info-list {width:100%;  padding:20px 25px;  border:1px solid #dadada;}
+.inct-sc ul.rent-info-list li {float:left;  width:50%;  height:30px;  font-size:15px;  color:#555;  line-height:30px;  font-weight:500;  letter-spacing:0;}
+.inct-sc ul.rent-info-list li:before {margin:13px 10px 0 0;}
+.inct-sc ul.rent-info-list li span {font-weight:400;  color:#999;  letter-spacing:0;}
+@media only screen and (max-width:767px) {
+  .inct-sc ul.rent-info-list {padding:19px;}
+  .inct-sc ul.rent-info-list li {float:none;  width:100%;  height:auto;  font-weight:400;  line-height:25px;  padding-left:15px;  margin-bottom:10px;}
+  .inct-sc ul.rent-info-list li:before {display:inline-block;  margin:10px 0 0 -15px;}
+  .inct-sc ul.rent-info-list li span {font-weight:400;  color:#999;  letter-spacing:0;}
+}
+
+/* 예약신청 버튼 */
+.inct-sc .rent-submit {clear:both;  width:100%;  padding-top:40px;  font-size:0;  text-align:center;}
+.inct-sc .rent-submit input#rent-submit-btn {dispaly:inline-block;  width:250px;  height:50px;  color:white;}
+.trip .inct-sc .rent-submit input#rent-submit-btn {border-color:#2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc .rent-submit input#rent-submit-btn {border-color:#005cb9;  background:#005cb9;}
+.dododo .inct-sc .rent-submit input#rent-submit-btn {border-color:#fa4c07;  background:#fa4c07;}
+@media only screen and (max-width:767px) {
+.inct-sc .rent-submit input#rent-submit-btn {width:100%;}
+}
+
+
+
+
+
+
+
+
+
+/* 대관신청내역 정보 */
+.inct-sc-board .ord-list h3.sc-title {padding-bottom:40px;}
+.inct-sc-board .ord-list .box_type {border-color:#e1e1e1;  margin-bottom:100px;}
+.inct-sc-board table.inct-ordered-list {width:100%;  margin-bottom:100px;  border-top-color:#604b8c;}
+.inct-sc-board table.inct-ordered-list th,
+.inct-sc-board table.inct-ordered-list td {height:50px;  border-color:#e1e1e1;  font-size:15px;}
+.inct-sc-board table.inct-ordered-list th {background:#f8f8f8;  font-weight:500;  color:#555;}
+.inct-sc-board table.inct-ordered-list td {font-weight:300;  color:#777;}
+.inct-sc-board table.inct-ordered-list td a {font-weight:300;  color:#777;}
+
+.inct-sc-board table.inct-ordered-info {width:100%;  margin-bottom:100px;  border-top-color:#604b8c;}
+.inct-sc-board table.inct-ordered-info th,
+.inct-sc-board table.inct-ordered-info td {height:50px;  border-color:#e1e1e1;  font-size:15px;}
+.inct-sc-board table.inct-ordered-info th {background:#f8f8f8;  font-weight:500;  color:#555;}
+.inct-sc-board table.inct-ordered-info td {padding-left:15px;  font-weight:300;  color:#777;}
+
+.inct-sc-board .st3-form h3.sc-title {padding-bottom:40px;}
+.inct-sc-board .st3-form .sc-item ul.rent-info-list {width:100%;  padding:20px;  border:1px solid #e1e1e1;  overflow:hidden;}
+.inct-sc-board .st3-form .sc-item ul.rent-info-list li {float:left;  width:50%;  line-height:30px;}
+
+.inct-sc-board .st3-form .action a {width:200px;  height:50px;  border-radius:4px;  font-size:16px;  color:#555;  font-weight:300;  line-height:50px;}
+.inct-sc-board .st3-form .action a.btn_submit.before_list,
+.inct-sc-board .st3-form .action a.btn_submit.next {color:white;  background:#604b8c;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

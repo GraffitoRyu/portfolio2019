@@ -1,0 +1,1010 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<link rel="stylesheet" href="./css/all.min.css">
+		<link rel="stylesheet" href="./css/youthspace.css">
+	</head>
+	<body>
+<!-- 헤더 시작 -->
+  <header id="inct-header">
+    <!-- 헤더 ; 상단 영역 시작 -->
+    <div class="header-upper">
+      <!-- 1200px 묶음 시작 -->
+      <div class="wrap">
+        <!-- 메인으로 이동하기 버튼 시작 -->
+        <div class="go-home">
+          <a href="#">청춘광장</a>
+        </div>
+        <!-- 메인으로 이동하기 버튼 끝 -->
+
+
+        <!-- 헤더 ; 유틸리티 내비게이션 시작 -->
+        <ul class="util-nav">
+    		  <li class="divide-line login">
+            <a href="#">로그인</a>
+          </li>
+    		  <li class="divide-line join">
+            <a href="#">회원가입</a>
+          </li>
+    		  <li class="divide-line findinfo">
+            <a href="#" class="win_password_lost">정보찾기	</a>
+          </li>
+
+          <!-- SNS 메뉴 -->
+          <li class="header-sns twit"><a href="#">트위터</a></li>
+          <li class="header-sns fb"><a href="#">페이스북</a></li>
+          <li class="header-sns insta"><a href="#">인스타그램</a></li>
+        </ul>
+        <!-- 헤더 ; 유틸리티 내비게이션 끝 -->
+      </div>
+      <!-- 1200px 묶음 끝 -->
+    </div>
+    <!-- 헤더 ; 상단 영역 끝 -->
+
+
+    <!-- 헤더 ; 하단 영역 시작 -->
+    <div class="header-lower">
+      <!-- 1200px 묶음 시작 -->
+      <div class="wrap">
+        <!-- 헤더 ; 메인 내비게이션 시작 -->
+        <nav id="gnb-pc">
+          <!-- 내비게이션 카테고리 목록 시작 -->
+          <ul class="category">
+						<li class="category-policy"><a href="#">대전청년정책</a></li>
+						<li class="category-space"><a href="#">청춘공간</a></li>
+						<li class="category-youthnet"><a href="#">대청넷</a></li>
+						<li class="category-community"><a href="#">커뮤니티</a></li>
+						<li class="category-blog"><a href="#" target="_blank">블로그</a></li>
+          </ul>
+          <!-- 내비게이션 카테고리 목록 끝 -->
+        </nav>
+        <!-- 헤더 ; 메인 내비게이션 끝 -->
+        <!-- 헤더 ; 검색 영역 시작 -->
+
+
+        <form name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="header-searchbox">
+          <label for="inct-url-hidden" class="readonly">숨김요소</label>
+		      <input type="hidden" name="url"	id="inct-url-hidden" value="">
+          <fieldset>
+            <legend>사이트 내 전체 검색</legend>
+            <label for="header-search" class="readonly">검색어 입력</label>
+            <input id="header-search" type="text" placeholder="검색어를 입력하세요." name="stx" class="form-control input-sm" style="border:none" value="">
+            <label for="header-search-btn" class="readonly">검색버튼</label>
+            <input id="header-search-btn" type="submit" value="검색하기 버튼">
+          </fieldset>
+        </form>
+        <!-- 헤더 ; 검색 영역 끝 -->
+
+
+        <!-- 헤더 ; 모바일 내비게이션 로고 시작 -->
+        <h1 class="mobile-logo">
+          <a href="#"><img src="./img/mobile-header-logo.png" alt="청춘"></a>
+        </h1>
+        <!-- 헤더 ; 모바일 내비게이션 로고 끝 -->
+
+        <!-- 헤더 ; 모바일 내비게이션 열기 시작 -->
+        <div class="gnb-mobile-open">
+          <button id="gnb-open-btn">MENU</button>
+        </div>
+        <!-- 헤더 ; 모바일 내비게이션 열기 끝 -->
+      </div>
+      <!-- 1200px 묶음 끝 -->
+
+      <!-- 내비게이션 드롭다운 메뉴 목록 시작 -->
+      <div id="dropdown">
+        <!-- 1200px 묶음 시작 -->
+        <div class="wrap">
+          <!-- 메뉴 묶음 시작 -->
+          <nav class="dropdown-menulist">
+						<!-- 대전청년정책 메뉴 시작 -->
+            <ul class="support">
+              <li><a href="#">청춘지원소식</a></li>
+							<li><a href="#">청년정책</a></li>
+              <li><a href="#">활동지원</a></li>
+              <li><a href="#">자료실</a></li>
+            </ul>
+            <!-- 대전청년정책 메뉴 끝 -->
+						<!-- 청춘공간 메뉴 시작 -->
+						<ul class="dropdown-space">
+							<li><a class="trip" href="#">청춘나들목</a></li>
+							<li><a class="rest" href="#">청춘너나들이</a></li>
+							<li><a class="dododo" href="#">청춘두두두</a></li>
+						</ul>
+						<!-- 청춘공간 메뉴 끝 -->
+            <!-- 대청넷 메뉴 시작 -->
+            <ul class="youthnet">
+              <li><a href="#">대청넷소개</a></li>
+							<li><a href="#">대청넷활동</a></li>
+            </ul>
+            <!-- 대청넷 메뉴 끝 -->
+            <!-- 커뮤니티 메뉴 시작 -->
+            <ul class="community">
+              <li><a href="#">소모임</a></li>
+              <li><a href="#">소통게시판</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">포토존</a></li>
+              <li><a href="#">문화행사</a></li>
+            </ul>
+            <!-- 커뮤니티 메뉴 끝 -->
+          </nav>
+          <!-- 메뉴 묶음 끝 -->
+          <!-- 로고/일러스트 박스 시작 (1200px 이하)-->
+          <div class="logo-box logo-box-1200">
+            <img src="./img//logo-support.png" alt="청춘지원">
+						<img src="./img/logo-trip_01.png" alt="청춘나들목">
+            <img src="./img/logo-youthnet.png" alt="대청넷">
+						<img src="./img/logo-community.png" alt="커뮤니티">
+            <img src="./img/logo-rest_01.png" alt="청춘너나들이">
+            <img src="./img/logo-dododo_01.png" alt="청춘두두두">
+          </div>
+          <!-- 로고/일러스트 박스 끝 -->
+        </div>
+        <!-- 1200px 묶음 끝 -->
+        <!-- 로고/일러스트 박스 시작 (1200px 이상)-->
+        <div class="logo-box logo-box-wide">
+          <img src="./img/logo-support.png" alt="청춘지원">
+					<img src="./img/logo-trip_01.png" alt="청춘나들목">
+          <img src="./img/logo-youthnet.png" alt="대청넷">
+          <img src="./img/logo-community.png" alt="커뮤니티">
+					<img src="./img/logo-rest_01.png" alt="청춘너나들이">
+          <img src="./img/logo-dododo_01.png" alt="청춘두두두">
+        </div>
+        <!-- 로고/일러스트 박스 끝 -->
+      </div>
+      <!-- 내비게이션 드롭다운 메뉴 목록 끝 -->
+
+
+
+      <!-- 헤더 ; 모바일 내비게이션 시작 -->
+      <nav id="gnb-mobile">
+        <!-- 모바일 내비게이션 닫기 시작 -->
+        <div class="gnb-close"><button>내비게이션 닫기</button></div>
+        <!-- 모바일 내비게이션 닫기 끝 -->
+        <!-- 모바일 내비게이션 박스 시작 -->
+        <div class="gnb-mobile-box">
+          <!-- 모바일 내비게이션 상단 영역 시작 -->
+          <div class="gnb-mobile-top">
+            <!-- 멤버십 영역 시작 -->
+            <div class="membership">
+              <a href="#" class="members login">로그인해주세요</a>
+              <a href="#" class="members logged">내정보</a>
+              <a href="#" class="mobile-nav-top-btn join">회원가입</a>
+              <a href="#" class="mobile-nav-top-btn logged">로그아웃</a>
+            </div>
+            <!-- 멤버십 영역 끝 -->
+            <!-- 모바일 검색 영역 시작 -->
+
+
+            <form name="tsearch" method="get" onsubmit="return tsearch_submit(this);" role="form" class="form">
+              <label for="inct-mobile-url-hidden" class="readonly">숨김요소</label>
+			        <input type="hidden" name="url"	id="inct-mobile-url-hidden" value="<?php echo (IS_YC) ? $at_href['isearch'] : $at_href['search'];?>">
+              <fieldset>
+                <legend>모바일용 사이트 전체 검색</legend>
+                <label for="mobile-search" class="readonly">검색어 입력</label>
+                <input id="mobile-search" type="text" placeholder="검색어를 입력하세요." name="stx" class="form-control input-sm" value="<?php echo $stx;?>">
+                <label for="mobile-search-btn" class="readonly">검색버튼</label>
+                <input id="mobile-search-btn" type="submit" value="검색버튼">
+              </fieldset>
+            </form>
+            <!-- 모바일 검색 영역 끝 -->
+          </div>
+          <!-- 모바일 내비게이션 상단 영역 끝 -->
+
+          <!-- 공간 바로가기 시작 -->
+          <ul class="nav-shortcut">
+            <li>
+              <a href="#">
+                <div class="icon"><img src="./img/mobile-nav-trip.png" alt="청춘나들목"></div>
+                <p class="icon-text">청춘나들목</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon"><img src="./img/mobile-nav-rest.png" alt="청춘너나들이"></div>
+                <p class="icon-text">청춘너나들이</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="icon"><img src="./img/mobile-nav-dododo.png" alt="청춘두두두"></div>
+                <p class="icon-text">청춘두두두</p>
+              </a>
+            </li>
+          </ul>
+          <!-- 공간 바로가기 끝 -->
+
+          <!-- 모바일 내비게이션 토글 메뉴 목록 시작 -->
+          <ul class="gnb-mobile-list">
+						<!-- 메뉴 아이템 시작 -->
+            <li class="m-support">
+              <button class="open-toggle">대전청년정책</button>
+              <!-- 토글 메뉴 시작 -->
+              <ul class="toggle">
+								<li><a href="#">청춘지원소식</a></li>
+								<li><a href="#">청년정책</a></li>
+	              <li><a href="#">활동지원</a></li>
+	              <li><a href="#">자료실</a></li>
+              </ul>
+              <!-- 토글 메뉴 끝 -->
+            </li>
+            <!-- 메뉴 아이템 끝 -->
+						<!-- 메뉴 아이템 시작 -->
+						<li class="m-space">
+              <button class="open-toggle">청년공간</button>
+							<ul class="toggle">
+								<li><a href="#">청춘나들목</a></li>
+								<li><a href="#">청춘너나들이</a></li>
+								<li><a href="#">청춘두두두</a></li>
+							</ul>
+						</li>
+						<!-- 메뉴 아이템 끝 -->
+						<!-- 메뉴 아이템 시작 -->
+            <li class="m-youthnet">
+              <button class="open-toggle">대청넷</button>
+              <!-- 토글 메뉴 시작 -->
+              <ul class="toggle">
+                <li><a href="#">대청넷소개</a></li>
+				        <li><a href="#">대청넷활동</a></li>
+              </ul>
+              <!-- 토글 메뉴 끝 -->
+            </li>
+            <!-- 메뉴 아이템 끝 -->
+            <!-- 메뉴 아이템 시작 -->
+            <li class="m-community">
+              <button class="open-toggle">커뮤니티</button>
+              <!-- 토글 메뉴 시작 -->
+              <ul class="toggle">
+								<li><a href="#">소모임</a></li>
+	              <li><a href="#">소통게시판</a></li>
+	              <li><a href="#">이벤트</a></li>
+	              <li><a href="#">포토존</a></li>
+	              <li><a href="#">문화행사</a></li>
+              </ul>
+              <!-- 토글 메뉴 끝 -->
+            </li>
+            <!-- 메뉴 아이템 끝 -->
+						<!-- 메뉴 아이템 시작 -->
+            <li class="m-blog">
+              <button class="open-toggle">블로그</button>
+              <!-- 토글 메뉴 시작 -->
+              <ul class="toggle">
+                <li><a href="https://blog.naver.com/daecheongnet">블로그</a></li>
+              </ul>
+              <!-- 토글 메뉴 끝 -->
+            </li>
+            <!-- 메뉴 아이템 끝 -->
+          </ul>
+          <!-- 모바일 내비게이션 토글 메뉴 목록 끝 -->
+
+          <!-- 모바일 내비게이션 SNS 바로가기 시작 -->
+          <ul class="nav-mobile-sns">
+            <li><a href="#">트위터</a></li>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">인스타그램</a></li>
+          </ul>
+          <!-- 모바일 내비게이션 SNS 바로가기 끝 -->
+        </div>
+        <!-- 모바일 내비게이션 박스 끝 -->
+      </nav>
+      <!-- 헤더 ; 모바일 내비게이션 끝 -->
+    </div>
+    <!-- 헤더 ; 하단 영역 끝 -->
+
+    <!-- 맨위로 이동하기 버튼 시작 -->
+    <div class="go-to-top">
+      <a href="#inct-contents">위로 이동하기</a>
+    </div>
+    <!-- 맨위로 이동하기 버튼 끝 -->
+
+  </header>
+  <!-- 헤더 끝 -->
+
+
+
+
+
+  <!-- 메인 콘텐츠 영역 시작 -->
+  <div class="inct-main-contents" id="inct-contents">
+
+    <!-- 메인비주얼 시작 - MV ; main visual -->
+    <div class="inct-mv">
+      <!-- 메인비주얼 슬라이드 시작 -->
+      <ul id="mv-list">
+        <!-- 메인비주얼 슬라이드 아이템 시작 -->
+        <li class="mv-trip"></li>
+        <!-- 메인비주얼 슬라이드 아이템 끝 -->
+        <!-- 메인비주얼 슬라이드 아이템 시작 -->
+        <li class="mv-rest"></li>
+        <!-- 메인비주얼 슬라이드 아이템 끝 -->
+        <!-- 메인비주얼 슬라이드 아이템 시작 -->
+        <li class="mv-dododo"></li>
+        <!-- 메인비주얼 슬라이드 아이템 끝 -->
+      </ul>
+      <!-- 메인비주얼 슬라이드 끝 -->
+
+		  <!-- 메인비주얼 콘텐츠 시작 -->
+		  <div class="mv-contents">
+		    <!-- 메인비주얼 콘텐츠 1200px 묶음 시작 -->
+		    <div class="wrap">
+
+		      <!-- 청춘지원소식 영역 시작 -->
+		      <div class="mv-support-notice">
+		        <!-- 청춘지원소식 헤더 시작 -->
+		        <div class="mv-header">
+		          <h3>청춘지원소식</h3>
+		          <a href="#" class="mv-more">더보기</a>
+		        </div>
+						<!-- 청춘지원소식 목록 시작 -->
+		        <ul class="mv-notice-list">
+		          <!-- 청춘지원소식 아이템 시작 -->
+							<li>
+                <a href="#">
+                  <div class="mv-notice-thumb">이미지</div>
+                  <div class="mv-notice-title">
+                    <span class="circle-side-btn">청년정책</span>
+										<h4 style="display:block; overflow:hidden; text-overflow:ellpisis; white-space:nowrap;">이곳에는 제목이 표시됩니다.</h4>
+                  </div>
+                </a>
+              </li>
+							<li>
+                <a href="#">
+                  <div class="mv-notice-thumb">이미지</div>
+                  <div class="mv-notice-title">
+                    <span class="circle-side-btn">청년정책</span>
+										<h4 style="display:block; overflow:hidden; text-overflow:ellpisis; white-space:nowrap;">청년정책 등의 게시판 제목이 이곳에 노출됩니다.</h4>
+                  </div>
+                </a>
+              </li>
+							<li>
+                <a href="#">
+                  <div class="mv-notice-thumb">이미지</div>
+                  <div class="mv-notice-title">
+                    <span class="circle-side-btn">너나들이</span>
+										<h4 style="display:block; overflow:hidden; text-overflow:ellpisis; white-space:nowrap;">공간 관련 소식도 이곳에 나타납니다.</h4>
+                  </div>
+                </a>
+              </li>
+							<li>
+                <a href="#">
+                  <div class="mv-notice-thumb">이미지</div>
+                  <div class="mv-notice-title">
+                    <span class="circle-side-btn">나들목</span>
+										<h4 style="display:block; overflow:hidden; text-overflow:ellpisis; white-space:nowrap;">관련 소식을 클릭하여 해당 페이지로 넘어갑니다.</h4>
+                  </div>
+                </a>
+              </li>
+							<!-- 청춘지원소식 헤더 끝 -->
+		        </ul>
+						<!-- 청춘지원소식 목록 끝 -->
+		      </div>
+		      <!-- 청춘지원소식 영역 끝 -->
+
+
+		      <!-- 채용정보 링크 시작 -->
+		      <div class="mv-job-link mv-bnr">
+		        <a href="http://daejeon.work.go.kr/main.do/main.do?regionCd=30000" target="_blank">
+		          <h3>채용정보</h3>
+		          <p>대전청년 일자리 정보 바로가기</p>
+		        </a>
+		      </div>
+		      <!-- 채용정보 링크 끝 -->
+
+		      <!-- 청춘지원 슬라이드 배너 시작 -->
+		      <div class="mv-support-banner mv-bnr">
+		        <div class="mv-header">
+		          <h2>청춘지원</h2>
+		          <ul class="mv-banner-controls">
+		            <li id="banner-prev"></li>
+		            <li id="banner-pause"></li>
+		            <li id="banner-next"></li>
+		          </ul>
+		        </div>
+		        <ul id="mv-banner-slide">
+							<li class="mv-banner-7"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=26"></a></li>
+		          <li class="mv-banner-1"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=16"></a></li>
+		          <li class="mv-banner-2"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=17"></a></li>
+							<li class="mv-banner-3"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=15"></a></li>
+							<li class="mv-banner-4"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=8"></a></li>
+							<li class="mv-banner-5"><a href="<?php echo G5_BBS_URL?>/board.php?bo_table=support_news&wr_id=19"></a></li>
+		        </ul>
+		      </div>
+		      <!-- 청춘지원 슬라이드 배너 끝 -->
+
+		      <!-- 지원사업 링크 배너 시작 -->
+		      <div class="mv-support-link mv-bnr">
+		        <a href="http://www.youthpassdaejeon.kr" target="blank">
+		          <p><span>대전청년취업희망카드</span></p>
+		        </a>
+		      </div>
+		      <!-- 지원사업 링크 배너 끝 -->
+
+		      <!-- 청년정책 미리보기 게시판 시작 -->
+		      <div class="mv-policy-link mv-bnr">
+		        <a href="https://www.daejeon.go.kr/drh/board/boardNormalList.do?boardId=normal_0096&menuSeq=1631" target="_blank">
+		          <h3>대전 시정소식</h3>
+		          <p>대전시청 홈페이지 시정뉴스 바로가기</p>
+		        </a>
+		      </div>
+		      <!-- 청년정책 미리보기 게시판 끝 -->
+
+		    </div>
+		    <!-- 메인비주얼 콘텐츠 1200px 묶음 끝 -->
+		  </div>
+		  <!-- 메인비주얼 콘텐츠 끝 -->
+
+    </div>
+    <!-- 메인비주얼 끝 -->
+
+      <!-- mc ; Main Contents -->
+
+
+      <!-- 소식 / 일정 시작 -->
+      <div class="inct-mc mc-section02">
+        <!-- 1200px 묶음 시작 -->
+        <div class="wrap">
+          <!-- 메인컨텐츠 타이틀 시작 -->
+          <div class="title-box">
+            <h2 class="mc-title inct-tab-mt-b inct-m-none">청춘공간 소식/일정</h2>
+            <h2 class="mc-title inct-tab-mt-none inct-m-b">청춘공간소식</h2>
+          </div>
+          <!-- 메인컨텐츠 타이틀 끝 -->
+
+          <!-- 소식/일정 영역 (mc-2) 시작 -->
+          <div class="mc-2">
+            <!-- 소식 시작 -->
+            <div class="mc-notice">
+              <!-- 더보기 버튼 영역 시작 -->
+              <div class="more-box inct-tab-mt-b inct-m-none">
+                <!-- 카테고리별 보기 탭메뉴 시작 -->
+                <ul id="mc-notice-tab">
+                  <li class="on"><button class="circle-side-btn all">전체보기</button></li>
+                  <li><button class="circle-side-btn trip">나들목</button></li>
+                  <li><button class="circle-side-btn rest">너나들이</button></li>
+                  <li><button class="circle-side-btn dododo">두두두</button></li>
+                </ul>
+                <!-- 카테고리별 보기 탭메뉴 끝 -->
+              </div>
+              <!-- 더보기 버튼 영역 끝 -->
+              <!-- 소식 헤더 시작 -->
+              <div class="mc-notice-header mc-item-header">
+                <h3 class="mc-item-title">청춘공간소식</h3>
+                <!-- 카테고리별 보기 탭메뉴 시작 -->
+                <label for="mobile-space-select" class="readonly">청춘소식 카테고리</label>
+                <select name="spaceSelect" id="mobile-space-select" class="mc-select inct-tab-mt-none inct-m-b">
+                  <option value="all">전체</option>
+                  <option value="trip">나들목</option>
+                  <option value="rest">너나들이</option>
+                  <option value="dododo">두두두</option>
+                </select>
+                <!-- 카테고리별 보기 탭메뉴 끝 -->
+              </div>
+              <!-- 소식 헤더 끝 -->
+              <!-- 소식 목록 영역 시작 -->
+              <div class="mc-2-listbox">
+                <!-- 소식 목록 시작 -->
+								<ul class="mc-2-list">
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn trip">나들목</span>
+										</div>
+										<p class="mc-2-title"><a href="#">나들목 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn trip">나들목</span>
+										</div>
+										<p class="mc-2-title"><a href="#">나들목 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn dododo">두두두</span>
+										</div>
+										<p class="mc-2-title"><a href="#">두두두 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn rest">너나들이</span>
+										</div>
+										<p class="mc-2-title"><a href="#">너나들이 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn dododo">두두두</span>
+										</div>
+										<p class="mc-2-title"><a href="#">두두두 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn rest">너나들이</span>
+										</div>
+										<p class="mc-2-title"><a href="#">너나들이 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+									<li>
+										<div class="space-tag">
+										  <span class="circle-side-btn dododo">두두두</span>
+										</div>
+										<p class="mc-2-title"><a href="#">두두두 관련 소식이 나타납니다.</a></p>
+				            <p class="mc-2-date">2018.05.01.</p>
+									</li>
+								</ul>
+                <!-- 소식 목록 끝 -->
+              </div>
+              <!-- 소식 목록 영역 끝 -->
+            </div>
+            <!-- 소식 끝 -->
+
+            <!-- 메인컨텐츠 타이틀 시작 -->
+            <div class="title-box inct-tab-mt-none inct-m-b">
+              <h2 class="mc-title">청춘일정</h2>
+            </div>
+            <!-- 메인컨텐츠 타이틀 끝 -->
+
+            <!-- 일정 시작 -->
+            <div class="mc-schedule">
+              <!-- 더보기 버튼 영역 시작 -->
+              <div class="more-box inct-tab-mt-b inct-m-none">
+                <!-- 더보기 시작 -->
+                <div class="mc-more"></div>
+                <!-- 더보기 끝 -->
+              </div>
+              <!-- 더보기 버튼 영역 끝 -->
+              <!-- 일정 헤더 시작 -->
+              <div class="mc-schedule-header mc-item-header">
+                <h3 class="mc-item-title inct-tab-mt-b inct-m-none"><span class="this-month">5</span>월의 일정</h3>
+                <h3 class="mc-item-title inct-tab-mt-none inct-m-b">청춘일정</h3>
+                <!-- <div id="mc-schedule-controls" class="inct-tab-mt-b inct-m-none">
+                  <button class="prev-month"></button>
+                  <button class="next-month"></button>
+                </div> -->
+                <!-- 카테고리별 보기 탭메뉴 시작 -->
+                <label for="mobile-schedule-select" class="readonly">청춘일정 월 선택</label>
+                <select name="scheduleSelect" id="mobile-schedule-select" class="mc-select inct-tab-mt-none inct-m-b">
+                  <option value="january">1월</option>
+                  <option value="february">2월</option>
+                  <option value="march" selected>3월</option>
+                  <option value="april">4월</option>
+                  <option value="may">5월</option>
+                  <option value="june">6월</option>
+                  <option value="july">7월</option>
+                  <option value="august">8월</option>
+                  <option value="september">9월</option>
+                  <option value="october">10월</option>
+                  <option value="november">11월</option>
+                  <option value="december">12월</option>
+                </select>
+                <!-- 카테고리별 보기 탭메뉴 끝 -->
+              </div>
+              <!-- 일정 헤더 끝 -->
+              <!-- 일정 목록 영역 시작 -->
+              <div class="mc-2-listbox"  id="schedule-list-box">
+                <!-- 일정 목록 시작 -->
+								<ul class="mc-2-list sunday6">
+									<li>
+										<a href="#">
+											<p class="mc-2-date">01<span class="day">TUE</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">02<span class="day">WED</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">03<span class="day">THU</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">04<span class="day">FRI</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">05<span class="day">SAT</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">06<span class="day">SUN</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<p class="mc-2-date">07<span class="day">MON</span></p>
+											<p class="mc-2-title">일정 제목이 나타납니다.</p>
+										</a>
+									</li>
+								</ul>
+                <!-- 일정 목록 끝 -->
+              </div>
+              <!-- 일정 목록 영역 끝 -->
+            </div>
+            <!-- 일정 끝 -->
+          </div>
+          <!-- 소식/일정 영역 (mc-2) 끝 -->
+        </div>
+        <!-- 1200px 묶음 끝 -->
+      </div>
+      <!-- 소식 / 일정 끝 -->
+
+
+      <!-- 소모임 시작 -->
+      <div class="inct-mc mc-section03">
+        <!-- 1200px 묶음 시작 -->
+        <div class="wrap">
+          <!-- 메인컨텐츠 타이틀 시작 -->
+          <div class="title-box">
+            <h2 class="mc-title">소모임</h2>
+          </div>
+          <!-- 메인컨텐츠 타이틀 끝 -->
+
+          <!-- 소모임 영역 (mc-3) 시작 -->
+          <div class="mc-3">
+            <!-- 카테고리별 보기 탭메뉴 시작 -->
+            <ul id="mc-gathering-tab" class="tab6 inct-tab-mt-b inct-m-none">
+              <li class="on"><button class="rect4px-btn all">전체</button></li>
+              <li><button class="rect4px-btn hobby">교육</button></li>
+              <li><button class="rect4px-btn travel">여행</button></li>
+              <li><button class="rect4px-btn study">스터디</button></li>
+              <li><button class="rect4px-btn culture">네트워킹</button></li>
+              <li><button class="rect4px-btn social">독서</button></li>
+            </ul>
+            <!-- 카테고리별 보기 탭메뉴 끝 -->
+
+            <!-- 모바일용 메인콘텐츠 소모임 헤더 시작 -->
+            <div class="mc-gathering-header mc-item-header inct-tab-mt-none inct-m-b">
+              <!-- 더보기 시작 -->
+              <div class="mc-more inct-tab-mt-none inct-m-b">
+                <a href="#" class="more">+ MORE</a>
+              </div>
+              <!-- 더보기 끝 -->
+              <!-- 카테고리별 보기 탭메뉴 시작 -->
+              <label for="mobile-gathering-select" class="readonly">소모임 카테고리 선택</label>
+              <select name="gatheringSelect" id="mobile-gathering-select" class="mc-select">
+                <option value="all">전체</option>
+                <option value="hobby">취미</option>
+                <option value="travel">여행</option>
+                <option value="study">스터디</option>
+                <option value="culture">문화/예술</option>
+                <option value="social">친목</option>
+              </select>
+              <!-- 카테고리별 보기 탭메뉴 끝 -->
+            </div>
+            <!-- 모바일용 메인콘텐츠 소모임 헤더 끝 -->
+
+            <!-- 소모임 목록 영역 시작 -->
+            <div class="mc-gathering">
+              <!-- 소모임 목록 시작 -->
+							<ul id="mc-gathering-list">
+								<li>
+									<div class="circle-thumb">
+										<a href="" class="mc-gathering-cover inct-tab-mt-b inct-m-none">
+										  현재 6명 신청
+										</a>
+										<div class="circle-thumb-img inct-tab-mt-none inct-m-b"></div>
+										<span class="inct-tab-mt-none inct-m-b">3/20명</span>
+									  </div>
+									  <!-- 소모임 썸네일 이미지 끝 -->
+									  <!-- 소모임 아이템 텍스트 시작 -->
+									  <div class="mc-gathering-text">
+										<a href="#">
+										  <p class="group-info-top inct-tab-mt-b inct-m-none">
+											<span class="group-category">독서</span>
+											<span class="group-volume">6명/20명</span>
+										  </p>
+										  <h3 class="info-title">소모임 제목</h3>
+										  <p class="info-text">소모임 내용이 표시됩니다.</p>
+										</a>
+									  </div>
+									  <!-- 소모임 아이템 텍스트 끝 -->
+									  <!-- 소모임 아이템 버튼 영역 시작 -->
+									  <div class="mc-gathering-btn">
+										<button class="rect4px-btn favorite">관심있어요!</button>
+										<button class="rect4px-btn share">공유하기</button>
+									  </div>
+									  <!-- 소모임 아이템 버튼 영역 끝 -->
+								</li>
+								<li>
+									<div class="circle-thumb">
+										<a href="" class="mc-gathering-cover inct-tab-mt-b inct-m-none">
+										  현재 6명 신청
+										</a>
+										<div class="circle-thumb-img inct-tab-mt-none inct-m-b"></div>
+										<span class="inct-tab-mt-none inct-m-b">3/20명</span>
+									  </div>
+									  <!-- 소모임 썸네일 이미지 끝 -->
+									  <!-- 소모임 아이템 텍스트 시작 -->
+									  <div class="mc-gathering-text">
+										<a href="#">
+										  <p class="group-info-top inct-tab-mt-b inct-m-none">
+											<span class="group-category">독서</span>
+											<span class="group-volume">6명/20명</span>
+										  </p>
+										  <h3 class="info-title">소모임 제목</h3>
+										  <p class="info-text">소모임 내용이 표시됩니다.</p>
+										</a>
+									  </div>
+									  <!-- 소모임 아이템 텍스트 끝 -->
+									  <!-- 소모임 아이템 버튼 영역 시작 -->
+									  <div class="mc-gathering-btn">
+										<button class="rect4px-btn favorite">관심있어요!</button>
+										<button class="rect4px-btn share">공유하기</button>
+									  </div>
+									  <!-- 소모임 아이템 버튼 영역 끝 -->
+								</li>
+								<li>
+									<div class="circle-thumb">
+										<a href="" class="mc-gathering-cover inct-tab-mt-b inct-m-none">
+										  현재 6명 신청
+										</a>
+										<div class="circle-thumb-img inct-tab-mt-none inct-m-b"></div>
+										<span class="inct-tab-mt-none inct-m-b">3/20명</span>
+									  </div>
+									  <!-- 소모임 썸네일 이미지 끝 -->
+									  <!-- 소모임 아이템 텍스트 시작 -->
+									  <div class="mc-gathering-text">
+										<a href="#">
+										  <p class="group-info-top inct-tab-mt-b inct-m-none">
+											<span class="group-category">독서</span>
+											<span class="group-volume">6명/20명</span>
+										  </p>
+										  <h3 class="info-title">소모임 제목</h3>
+										  <p class="info-text">소모임 내용이 표시됩니다.</p>
+										</a>
+									  </div>
+									  <!-- 소모임 아이템 텍스트 끝 -->
+									  <!-- 소모임 아이템 버튼 영역 시작 -->
+									  <div class="mc-gathering-btn">
+										<button class="rect4px-btn favorite">관심있어요!</button>
+										<button class="rect4px-btn share">공유하기</button>
+									  </div>
+									  <!-- 소모임 아이템 버튼 영역 끝 -->
+								</li>
+								<li>
+									<div class="circle-thumb">
+										<a href="" class="mc-gathering-cover inct-tab-mt-b inct-m-none">
+										  현재 6명 신청
+										</a>
+										<div class="circle-thumb-img inct-tab-mt-none inct-m-b"></div>
+										<span class="inct-tab-mt-none inct-m-b">3/20명</span>
+									  </div>
+									  <!-- 소모임 썸네일 이미지 끝 -->
+									  <!-- 소모임 아이템 텍스트 시작 -->
+									  <div class="mc-gathering-text">
+										<a href="#">
+										  <p class="group-info-top inct-tab-mt-b inct-m-none">
+											<span class="group-category">독서</span>
+											<span class="group-volume">6명/20명</span>
+										  </p>
+										  <h3 class="info-title">소모임 제목</h3>
+										  <p class="info-text">소모임 내용이 표시됩니다.</p>
+										</a>
+									  </div>
+									  <!-- 소모임 아이템 텍스트 끝 -->
+									  <!-- 소모임 아이템 버튼 영역 시작 -->
+									  <div class="mc-gathering-btn">
+										<button class="rect4px-btn favorite">관심있어요!</button>
+										<button class="rect4px-btn share">공유하기</button>
+									  </div>
+									  <!-- 소모임 아이템 버튼 영역 끝 -->
+								</li>
+							</ul>
+							<div class="clearfix"></div>
+            </div>
+            <!-- 소모임 목록 영역 끝 -->
+
+            <!-- 소모임 슬라이더 컨트롤 시작 -->
+            <button class="prev-btn mc-3-btn"></button>
+            <button class="next-btn mc-3-btn"></button>
+            <!-- 소모임 슬라이더 컨트롤 끝 -->
+          </div>
+          <!-- 소모임 영역 (mc-3) 끝 -->
+        </div>
+        <!-- 1200px 묶음 끝 -->
+      </div>
+      <!-- 소모임 끝 -->
+
+
+      <!-- 프로그램 시작 -->
+      <div class="inct-mc mc-section04">
+        <!-- 1200px 묶음 시작 -->
+        <div class="wrap">
+          <!-- 메인컨텐츠 타이틀 시작 -->
+          <div class="title-box">
+            <h2 class="mc-title">프로그램</h2>
+          </div>
+          <!-- 메인컨텐츠 타이틀 끝 -->
+          <!-- 프로그램 영역 시작 -->
+          <div class="mc-4">
+            <!-- 모바일용 메인콘텐츠 프로그램 헤더 시작 -->
+            <div class="mc-program-header mc-item-header inct-tab-mt-none inct-m-b">
+              <!-- 카테고리별 보기 탭메뉴 시작 -->
+              <label for="mobile-program-select" class="readonly">프로그램 카테고리 선택</label>
+              <select name="programSelect" id="mobile-program-select" class="mc-select">
+                <option value="all">공통</option>
+                <option value="trip">나들목</option>
+                <option value="rest">너나들이</option>
+                <option value="dododo">두두두</option>
+              </select>
+              <!-- 카테고리별 보기 탭메뉴 끝 -->
+            </div>
+            <!-- 모바일용 메인콘텐츠 프로그램 헤더 끝 -->
+            <!-- 프로그램 목록 시작 -->
+						<ul id="program-list">
+							<li class="trip">
+								<!-- 프로그램 카드 / 썸네일 영역 시작 -->
+								<div class="mc-program-card">
+								  <div class="mc-program-tag">나들목</div>
+								  <!-- 프로그램 내용 미리보기 시작 -->
+								  <div class="mc-program-cover">
+										<h3 class="info-title">프로그램 제목</h3>
+										<p class="info-text">프로그램 내용이 표시됩니다.</p>
+										<p class="mc-program-date">2018.05.01.</p>
+										<a href="#" class="circle-side-btn mc-program-btn">자세히보기</a>
+								  </div>
+								  <!-- 프로그램 내용 미리보기 끝 -->
+								</div>
+								<!-- 프로그램 카드 / 썸네일 영역 끝 -->
+						  </li>
+							<li class="all">
+								<!-- 프로그램 카드 / 썸네일 영역 시작 -->
+								<div class="mc-program-card">
+								  <div class="mc-program-tag">공통</div>
+								  <!-- 프로그램 내용 미리보기 시작 -->
+								  <div class="mc-program-cover">
+										<h3 class="info-title">프로그램 제목</h3>
+										<p class="info-text">프로그램 내용이 표시됩니다.</p>
+										<p class="mc-program-date">2018.05.01.</p>
+										<a href="#" class="circle-side-btn mc-program-btn">자세히보기</a>
+								  </div>
+								  <!-- 프로그램 내용 미리보기 끝 -->
+								</div>
+								<!-- 프로그램 카드 / 썸네일 영역 끝 -->
+						  </li>
+							<li class="dododo">
+								<!-- 프로그램 카드 / 썸네일 영역 시작 -->
+								<div class="mc-program-card">
+								  <div class="mc-program-tag">두두두</div>
+								  <!-- 프로그램 내용 미리보기 시작 -->
+								  <div class="mc-program-cover">
+										<h3 class="info-title">프로그램 제목</h3>
+										<p class="info-text">프로그램 내용이 표시됩니다.</p>
+										<p class="mc-program-date">2018.05.01.</p>
+										<a href="#" class="circle-side-btn mc-program-btn">자세히보기</a>
+								  </div>
+								  <!-- 프로그램 내용 미리보기 끝 -->
+								</div>
+								<!-- 프로그램 카드 / 썸네일 영역 끝 -->
+						  </li>
+							<li class="rest">
+								<!-- 프로그램 카드 / 썸네일 영역 시작 -->
+								<div class="mc-program-card">
+								  <div class="mc-program-tag">너나들이</div>
+								  <!-- 프로그램 내용 미리보기 시작 -->
+								  <div class="mc-program-cover">
+										<h3 class="info-title">프로그램 제목</h3>
+										<p class="info-text">프로그램 내용이 표시됩니다.</p>
+										<p class="mc-program-date">2018.05.01.</p>
+										<a href="#" class="circle-side-btn mc-program-btn">자세히보기</a>
+								  </div>
+								  <!-- 프로그램 내용 미리보기 끝 -->
+								</div>
+								<!-- 프로그램 카드 / 썸네일 영역 끝 -->
+						  </li>
+						</ul>
+            <!-- 프로그램 목록 끝 -->
+            <button class="inct-pc-mt-none inct-tab-lt-b mc-program-btn mc-program-left"></button>
+            <button class="inct-pc-mt-none inct-tab-lt-b mc-program-btn mc-program-right"></button>
+          </div>
+          <!-- 프로그램 영역 끝 -->
+        </div>
+        <!-- 1200px 묶음 끝 -->
+      </div>
+      <!-- 프로그램 끝 -->
+
+
+    </div>
+    <!-- 메인 콘텐츠 영역 끝 -->
+		<!-- 푸터 시작 -->
+		<footer id="inct-footer">
+			<!-- 1200px 묶음 시작 -->
+			<div class="wrap">
+			<!-- 푸터 메뉴 시작 -->
+			<ul class="footer-menu">
+				<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=privacy">개인정보취급방침</a></li>
+				<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=noemail">이메일집단수집거부</a></li>
+				<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=provision">이용약관</a></li>
+				<li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=video_processing">영상정보처리기기 운영·관리</a></li>
+				<!-- <li><a href="<?php echo G5_BBS_URL;?>/page.php?hid=disclaimer">책임의 한계와 법적고지</a></li> -->
+			</ul>
+			<!-- 푸터 메뉴 끝 -->
+			<!-- 푸터 정보 시작 -->
+			<ul class="footer-info">
+				<!--li>
+				<p class="footer-info-text">
+					<a href="tel:0420000000">
+					대전광역시 청년정책담당관<br>
+					35242 대전광역시 서구 둔산1동 둔산로 100,<br class="inct-wide-i inct-pc-none inct-tab-i">
+					대전시청 기획조정실 청년정책담당관<br>
+					T. 042-000-0000<br>
+					F. 042-000-0000
+					</a>
+				</p>
+				</li-->
+				<li>
+				<p class="footer-info-text">
+					나들목<br>
+					(대전역 지하철 역사 지하 1층, 지하 3층)
+					<a href="tel:07042759993">T. 070-4275-9993(지하3층)</a>
+					<a href="tel:07042759994">T. 070-4275-9994(지하1층)</a>
+					<!-- F. 042-000-0000 -->
+					</a>
+				</p>
+				</li>
+				<li>
+				<p class="footer-info-text">
+					너나들이 (샤크존 2층)<br>
+					대전광역시 서구 둔산중로 19, 2층
+					<a href="tel:07042759995">T. 070-4275-9995</a>
+					<!-- F. 042-000-0000 -->
+					</a>
+				</p>
+				</li>
+				<li>
+				<p class="footer-info-text">
+
+					두두두 (충청투데이 지하1층 / 1층)<br>
+					대전광역시 서구 갈마중로30번길 67,<br class="inct-wide-i inct-pc-none inct-tab-i">
+					지하 1층 / 1층
+					<a href="tel:07042759996">T. 070-4275-9996</a>
+					<!-- F. 042-000-0000 -->
+					</a>
+				</p>
+				</li>
+			</ul>
+			<!-- 푸터 정보 끝 -->
+			<!-- copyright 시작 -->
+			<div class="copyright">
+				COPYRIGHT ⓒ 청춘광장.<br class="inct-tab-mt-none inct-m-i"> ALL RIGHTS RESERVED.
+			</div>
+			<!-- copyright 끝 -->
+			</div>
+			<!-- 1200px 묶음 끝 -->
+		</footer>
+		<!-- 푸터 끝 -->
+		<!-- 스크립트 불러오기 영역 -->
+		<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.print.min.js"></script>
+		<script type="text/javascript" src="./js/nav.js"></script>
+		<script type="text/javascript" src="./js/mv.js"></script>
+		<script type="text/javascript" src="./js/rent.js"></script>
+		<script type="text/javascript" src="./js/print.js"></script>
+		<script type="text/javascript" src="./js/blueprint.js"></script>
+		<script type="text/javascript" src="./js/tabmenu.js"></script>
+		<script type="text/javascript" src="./js/faq.js"></script>
+		<script type="text/javascript" src="./js/info-slide.js"></script>
+	</body>
+</html>

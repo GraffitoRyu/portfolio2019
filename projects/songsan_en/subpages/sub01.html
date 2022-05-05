@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONGSAN</title>
+    <link rel="stylesheet" href="../css/songsan_en.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/mc-slider.js"></script>
+    <script type="text/javascript" src="../js/sub-tabmenu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/header-logo.png" alt="SONGSAN"></a>
+        </div>
+        <div class="util-nav">
+          <ul>
+            <li><a href="http://itsolle.com/">It's OLLE</a></li>
+            <li class="lang">
+              <button class="lang-btn">ENGLISH</button>
+              <ul class="lang-list">
+                <li><a href="./index.html">ENGLISH</a></li>
+                <li><a href="../../songsan_jp/index.html">JAPANESE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li class="on"><a href="sub01.html">COMPANY</a></li>
+            <li><a href="sub02.html">VISION</a></li>
+            <li><a href="sub03.html">R&D</a></li>
+            <li><a href="sub04.html">BRAND</a></li>
+            <li><a href="sub05.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="text/javascript">
+      var mainScroll = null;
+      $(window).scroll(function(){
+        clearTimeout(mainScroll);
+        mainScroll = setTimeout(scrollDone, 50);
+      });
+      function scrollDone() {
+        var nowPosition = $(window).scrollTop();
+        if(nowPosition >= 500) {
+          $('#header').addClass('white');
+        } else if(nowPosition < 500) {
+          $('#header').removeClass('white');
+        }
+      }
+    </script>
+
+
+    <div id="contents" class="sc-container">
+      <div class="go-to-top">
+        TOP
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.go-to-top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').stop().animate({scrollTop: 0}, 600);
+          });
+        });
+      </script>
+      <section class="sc-item sv">
+        <h2 class="category">Company</h2>
+        <p class="sv-text">
+          Songsan Co., Ltd has been succeeding and developing<br>
+          a happy food culture through healthy<br>
+          and delicious food varieties and continuing<br>
+          our effort to settle the happy food culture.
+        </p>
+        <ul id="sub-tabmenu">
+          <li class="on"><button section-id="#sub01-1">INTRODUCE</button></li>
+          <li><button section-id="#sub01-2">CEO MESSAGE</button></li>
+          <li><button section-id="#sub01-3">AFFILIATE</button></li>
+        </ul>
+      </section>
+
+      <section id="sub01-1" class="sc-item sub01-1">
+        <div class="intro-box">
+          <h3>
+            Introduce<br>
+            <span>SONGSAN</span>
+          </h3>
+          <p>
+            Songsan corporation<br>
+            has spread Korean traditional foods<br>
+            and continued R & D to make a happy food culture.<br>
+            Now, we are making the best effort to spread<br>
+            Korean traditional foods to the world.<br>
+          </p>
+        </div>
+        <div class="intro-img"></div>
+      </section>
+
+      <section id="sub01-2" class="sc-item sub01-2">
+        <div class="title-box">
+          <div class="title-text">
+            <h3>
+              <span>CEO</span><br>
+              MESSAGE
+            </h3>
+            <p>
+              We are making an effort to be acknowledged globally with the company motto of honest and consideration.
+            </p>
+          </div>
+        </div>
+        <div class="contents-box greetings">
+          <p>
+            Welcome!<br>
+            We are putting best efforts for the development of Korean traditional foods that have been globally recognized for their excellence based on our company philosophy of "sincerity and consideration", which is essential to social life. We are dedicated to become a "global top company" by researching and succeeding braised dishes such as "soy sauce braised dishes" that are our traditional foods favored by people of all ages. From the result of focusing our passion on braised dishes for many years including soy sauce braised meat, you can easily taste our products such as soy sauce braised beef provided by Bon Porridge, the biggest porridge producer in Korea, as well as on large domestic & overseas distribution channels, home shopping, and online shopping mall. Dreaming of a greater market than today, we will accelerate more in pioneering overseas markets along with domestic market and become a globally recognized company.<br>
+            Thank you!
+          </p>
+        </div>
+      </section>
+
+      <section id="sub01-3" class="sc-item sub01-3">
+        <h3>AFFILIATE</h3>
+        <ul class="sub01-3-list">
+          <li>
+            <h4>
+              Songsan Farming<br>
+              Association Co.
+            </h4>
+            <p>
+              Contract cultivation<br>
+              & distribution
+            </p>
+          </li>
+          <li>
+            <h4>
+              Farming Co.<br>
+              Songsan
+            </h4>
+            <p>
+              Braising<br>
+              & processing
+            </p>
+          </li>
+          <li>
+            <h4>
+              Farming Co.<br>
+              Olle
+            </h4>
+            <p>
+              Braising<br>
+              & processing
+            </p>
+          </li>
+          <li>
+            <h4>
+              SFS Co., Ltd.
+            </h4>
+            <p>
+              Braising & livestock<br>
+                goods processing
+            </p>
+          </li>
+        </ul>
+      </section>
+
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="../img/footer-logo.png" alt="SONGSAN">
+      </div>
+      <div class="footer-info">
+        <p>
+          115-84, Gwonyul-ro 29beon-gil, Jangheung-myeon, Yangju-si, Gyeonggi-do, Republic of Korea<br>
+          <span>Tel. +82-31-877-0668</span>
+          <span>Fax. +82-31-877-0664</span>
+        </p>
+        <p>Copyright ⓒ 2018 SONGSAN Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

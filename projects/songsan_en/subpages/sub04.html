@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONGSAN</title>
+    <link rel="stylesheet" href="../css/songsan_en.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="../js/mc-slider.js"></script>
+    <script type="text/javascript" src="../js/sub-tabmenu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="../index.html"><img src="../img/header-logo.png" alt="SONGSAN"></a>
+        </div>
+        <div class="util-nav">
+          <ul>
+            <li><a href="http://itsolle.com/">It's OLLE</a></li>
+            <li class="lang">
+              <button class="lang-btn">ENGLISH</button>
+              <ul class="lang-list">
+                <li><a href="./index.html">ENGLISH</a></li>
+                <li><a href="../../songsan_jp/index.html">JAPANESE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li><a href="sub01.html">COMPANY</a></li>
+            <li><a href="sub02.html">VISION</a></li>
+            <li><a href="sub03.html">R&D</a></li>
+            <li class="on"><a href="sub04.html">BRAND</a></li>
+            <li><a href="sub05.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="text/javascript">
+      var mainScroll = null;
+      $(window).scroll(function(){
+        clearTimeout(mainScroll);
+        mainScroll = setTimeout(scrollDone, 50);
+      });
+      function scrollDone() {
+        var nowPosition = $(window).scrollTop();
+        if(nowPosition >= 500) {
+          $('#header').addClass('white');
+        } else if(nowPosition < 500) {
+          $('#header').removeClass('white');
+        }
+      }
+    </script>
+
+
+    <div id="contents" class="sc-container">
+      <div class="go-to-top">
+        TOP
+      </div>
+      <script>
+        $(document).ready(function(){
+          $('.go-to-top').on('click',function(e){
+            e.preventDefault();
+            $('html,body').stop().animate({scrollTop: 0}, 600);
+          });
+        });
+      </script>
+      <section class="sc-item sv">
+        <h2 class="category">Brand</h2>
+        <p class="sv-text">
+          Songsan Co., Ltd has been succeeding and developing<br>
+          a happy food culture through healthy<br>
+          and delicious food varieties and continuing<br>
+          our effort to settle the happy food culture.
+        </p>
+        <ul id="sub-tabmenu">
+          <li class="on"><button section-id="#sub04-1">BRAND</button></li>
+          <li><button section-id="#sub04-2">PRODUCTS</button></li>
+        </ul>
+      </section>
+
+      <section id="sub04-1" class="sc-item sub04-1">
+        <h3>BRAND</h3>
+        <div class="sub04-logo">
+          <img src="../img/itsolle.png" alt="it's olle">
+        </div>
+        <p>
+          “Korea's No.1 Soy Sauce Braised Meat”,<br>
+          which deals professionally with soy sauce braised meat, the Korean traditional food.
+        </p>
+      </section>
+
+      <section id="sub04-2" class="sc-item sub04-2">
+        <h3>PRODUCTS</h3>
+        <div class="wrap">
+          <ul class="sub04-2-list">
+            <li class="img-left">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Soy Sauce Braised<br>
+                  Beef
+                </h4>
+                <p>
+                  It is the soy sauce braised meat group<br>
+                  made of luxurious beef such as domestic beef,<br>
+                  Korean beef, and Australian clean beef.
+                </p>
+              </div>
+            </li>
+            <li class="img-right">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Soy Sauce Braised<br>
+                  Pork
+                </h4>
+                <p>
+                  It is the product group<br>
+                  that has used domestic pork<br>
+                  and Jeju clean pork.
+                </p>
+              </div>
+            </li>
+            <li class="img-left">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Soy Sauce Braised<br>
+                  chicken breast
+                </h4>
+                <p>
+                  It is the product group<br>
+                  that has used chicken breast<br>
+                  in proud of less fat and light taste.
+                </p>
+              </div>
+            </li>
+            <li class="img-right">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Cup Products
+                </h4>
+                <p>
+                  It is a cup product group<br>
+                  for a simple dish<br>
+                  in one meal.
+                </p>
+              </div>
+            </li>
+            <li class="img-left">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Other soy sauce<br>
+                  braised dishes
+                </h4>
+                <p>
+                  It is a product group<br>
+                  that has used seafood<br>
+                  or roe besides meat.
+                </p>
+              </div>
+            </li>
+            <li class="img-right">
+              <div class="sub04-2-img"></div>
+              <div class="sub04-2-text">
+                <h4>
+                  Other Braised Dishes
+                </h4>
+                <p>
+                  It is a product group<br>
+                  made by cooking vegetables<br>
+                  with rich nutrients.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="../img/footer-logo.png" alt="SONGSAN">
+      </div>
+      <div class="footer-info">
+        <p>
+          115-84, Gwonyul-ro 29beon-gil, Jangheung-myeon, Yangju-si, Gyeonggi-do, Republic of Korea<br>
+          <span>Tel. +82-31-877-0668</span>
+          <span>Fax. +82-31-877-0664</span>
+        </p>
+        <p>Copyright ⓒ 2018 SONGSAN Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

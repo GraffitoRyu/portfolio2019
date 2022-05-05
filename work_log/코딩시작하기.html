@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="Googlebot" content="noindex, nofollow">
+  <meta name="Naverbot" content="noindex, nofollow">
+  <meta name="Daumoa" content="noindex, nofollow">
+
+  <title>작업 로그 관리</title>
+
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // 모바일 기기 인식
+      if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+        // 모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+        $('html').addClass('mobile-device');
+      }
+      if (navigator.userAgent.match(/iP(hone|od|ad)|Mac/)) {
+        // 애플계열 기기일 때 실행 될 스크립트
+        $('html').addClass('ios-web');
+      }
+    })
+  </script>
+  <script src="./js/prefixfree.min.js"></script>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main id="contents">
+    <section class="mv"></section>
+    <section class="mc mc01"></section>
+    <section class="mc mc02"></section>
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+</html>

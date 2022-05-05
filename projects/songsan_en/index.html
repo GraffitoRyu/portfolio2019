@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SONGSAN</title>
+    <link rel="stylesheet" href="./css/songsan_en.css">
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="./js/mc-slider.js"></script>
+    <script type="text/javascript" src="./js/sub-tabmenu.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="wrap">
+        <div class="logo">
+          <a href="index.html"><img src="./img/header-logo.png" alt="SONGSAN"></a>
+        </div>
+        <div class="util-nav">
+          <ul>
+            <li><a href="http://itsolle.com/">It's OLLE</a></li>
+            <li class="lang">
+              <button class="lang-btn">ENGLISH</button>
+              <ul class="lang-list">
+                <li><a href="./index.html">ENGLISH</a></li>
+                <li><a href="../songsan_jp/index.html">JAPANESE</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav id="gnb">
+          <ul>
+            <li><a href="./subpages/sub01.html">COMPANY</a></li>
+            <li><a href="./subpages/sub02.html">VISION</a></li>
+            <li><a href="./subpages/sub03.html">R&D</a></li>
+            <li><a href="./subpages/sub04.html">BRAND</a></li>
+            <li><a href="./subpages/sub05.html">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <script type="text/javascript">
+      var mainScroll = null;
+      $(window).scroll(function(){
+        clearTimeout(mainScroll);
+        mainScroll = setTimeout(scrollDone, 50);
+      });
+      function scrollDone() {
+        var nowPosition = $(window).scrollTop();
+        if(nowPosition >= 800) {
+          $('#header').addClass('white');
+        } else if(nowPosition < 800) {
+          $('#header').removeClass('white');
+        }
+      }
+    </script>
+
+
+    <div id="contents" class="mc-container">
+      <section class="mc-item mv">
+        <div class="wrap">
+          <div class="title-upper">
+            Songsan's Brand<br>
+            <span class="yellow">It's OLLE</span>
+          </div>
+          <div class="title-main">
+            <p>
+              Lead the paradigm<br>
+              <span class="emph">for good food</span>
+            </p>
+          </div>
+          <div class="title-lower">
+            Our food for everyone<br>
+            Lead the paradigm for good food<br>
+            Lead the home meal culture of healthy, high quality food affordable<br>
+            Ensure integrity and trust in all we do
+            </div>
+        </div>
+      </section>
+      <section class="mc-item mc-1">
+        <div class="wrap">
+          <div class="mc-1-textbox">
+            <div class="mc-1-title">
+              <span class="emph">SONGSAN</span>
+              <p>
+                is making a happy<br>
+                food culture.
+              </p>
+            </div>
+            <div class="mc-1-text">
+              Songsan tries to study<br>
+              soy sauce braised meat,<br>
+              one of Korean traditional foods,<br>
+              to advance to a global company.
+            </div>
+          </div>
+          <ul class="mc-1-list">
+            <li>
+              <div class="mc-1-list-text">
+                <div class="icon">
+                  <img src="./img/mc-1-icon-1.png" alt="material">
+                </div>
+                <p>
+                  Food made of<br>
+                  fresh materials
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="mc-1-list-text">
+                <div class="icon">
+                  <img src="./img/mc-1-icon-2.png" alt="process">
+                </div>
+                <p>
+                  Faithful and sanitary<br>
+                  production process
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="mc-1-list-text">
+                <div class="icon">
+                  <img src="./img/mc-1-icon-3.png" alt="healthy">
+                </div>
+                <p>
+                  Healthy food for<br>
+                  every one
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mc-item mc-2">
+        <ul id="mc-slider">
+          <li class="mc-2-list mc-2-1"></li>
+          <li class="mc-2-list mc-2-2"></li>
+        </ul>
+        <div id="mc-2-controls">
+          <div class="mc-2-btn mc-2-next"></div>
+          <div class="mc-2-btn mc-2-prev"></div>
+        </div>
+      </section>
+    </div>
+
+
+    <footer id="footer">
+      <div class="footer-logo">
+        <img src="./img/footer-logo.png" alt="SONGSAN">
+      </div>
+      <div class="footer-info">
+        <p>
+          115-84, Gwonyul-ro 29beon-gil, Jangheung-myeon, Yangju-si, Gyeonggi-do, Republic of Korea<br>
+          <span>Tel. +82-31-877-0668</span>
+          <span>Fax. +82-31-877-0664</span>
+        </p>
+        <p>Copyright ⓒ 2018 SONGSAN Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

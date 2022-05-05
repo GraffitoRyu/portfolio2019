@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+ *
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) */
+/* 나눔명조 */
+/* 나눔명조 Regular */
+@font-face {
+ font-family: 'nm';
+ font-style: normal;
+ font-weight: 400;
+ src: url(../fonts/NanumMyeongjo.eot);
+ src: url(../fonts/NanumMyeongjo.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumMyeongjo.woff) format('woff');
+}
+/* 나눔명조 Bold */
+@font-face {
+ font-family: 'nm';
+ font-style: normal;
+ font-weight: 700;
+ src: url(../fonts/NanumMyeongjoB.eot);
+ src: url(../fonts/NanumMyeongjoB.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumMyeongjoB.woff) format('woff');
+}
+/* 나눔명조 Extra Bold */
+@font-face {
+ font-family: 'nm';
+ font-style: normal;
+ font-weight: 800;
+ src: url(../fonts/NanumMyeongjoEB.eot);
+ src: url(../fonts/NanumMyeongjoEB.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/NanumMyeongjoEB.woff) format('woff');
+}

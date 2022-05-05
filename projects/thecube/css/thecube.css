@@ -1,0 +1,478 @@
+@charset "UTF-8";
+
+/* 폰트 불러오기 */
+@import url(./notosans.css);
+
+/* RESET */
+* {margin:0;  padding:0;  box-sizing:border-box;  font-family:'ns';  letter-spacing:-1px;}
+html, body {width:100%;}
+h1, h2, h3, h4, h5, h6 {margin:0;  padding:0;  font-weight:500;}
+a {display:block;  text-decoration:none;  color:#333;}
+ul, ol, dl {list-style:none;}
+p {margin:0;  padding:0;}
+img {border:0;}
+input, button, select {display:block;  border:0;  background:transparent;}
+fieldset {border:0;}
+input::-webkit-input-placeholder,
+input::-moz-input-placeholder,
+input:-moz-input-placeholder,
+input:-ms-input-placeholder,
+input::placeholder,
+input::-ms-input-placeholder {opacity:1;  color:#ddd;}
+.readonly {display:none;}
+.wrap {width:100%;  max-width:1200px;  padding:0 30px;  margin:0 auto;  overflow:hidden;}
+@media only screen and (max-width:1023px) {
+  .wrap {padding:0 50px;}
+}
+@media only screen and (max-width:767px) {
+  .wrap {padding:0 20px;}
+}
+
+/* 헤더 */
+#header {position:fixed;  top:0;  left:0;  z-index:9999;  width:100%;  height:81px;  border-bottom:1px solid rgba(255,255,255,0.3);  background:transparent;  transition:all 0.3s;}
+@media only screen and (max-width:767px) {
+  #header {height:61px;}
+}
+#header h1.header-logo {float:left;  width:200px;  height:50px;}
+#header h1.header-logo a {width:100%;  height:100%;  font-size:0;  text-align:left;  line-height:80px;}
+#header h1.header-logo a img {vertical-align:middle;  transition:all 0.3s;}
+#header h1.header-logo a img.m-logo {display:none;}
+#header h1.header-logo a img.navy-logo:not(.m-logo) {display:none;  opacity:0;}
+#header h1.header-logo a img.white-logo:not(.m-logo) {display:inline;  opacity:1;}
+@media only screen and (max-width:767px) {
+  #header h1.header-logo a {line-height:60px;}
+  #header h1.header-logo a img.m-logo {display:inline;}
+  #header h1.header-logo a img.navy-logo:not(.m-logo) {display:none;}
+  #header h1.header-logo a img.white-logo:not(.m-logo) {display:none;}
+}
+#header button#open-nav {display:none;}
+#header nav#cube-nav {float:right;  width:auto;  overflow:hidden;}
+#header nav#cube-nav ul {width:auto;  overflow:hidden;}
+#header nav#cube-nav ul li {float:left;  width:auto;  padding:0 20px;}
+#header nav#cube-nav ul li:last-child {padding-right:0;}
+#header nav#cube-nav ul li a {height:80px;  overflow:hidden;  position:relative;  font-size:0;}
+#header nav#cube-nav ul li a:before {content:'';  width:0;  height:4px;  position:absolute;  bottom:0;  left:50%;  background:white;  transition:all 0.3s;}
+#header nav#cube-nav ul li a:after {content:'';  width:0;  height:4px;  position:absolute;  bottom:0;  right:50%;  background:white;  transition:all 0.3s;}
+#header nav#cube-nav ul li a:hover:before {width:50%;}
+#header nav#cube-nav ul li a:hover:after {width:50%;}
+#header nav#cube-nav ul li.active a:before {width:50%;  background:#80e0ff;}
+#header nav#cube-nav ul li.active a:after {width:50%;  background:#80e0ff;}
+#header nav#cube-nav ul li a span {position:absolute;  top:0;  left:0;  display:block;  height:80px;  font-size:16px;  color:white;  line-height:80px;  letter-spacing:0;  text-align:center;  opacity:0;  transition:all 0.3s;  overflow:hidden;}
+#header nav#cube-nav ul li:nth-child(1) a,
+#header nav#cube-nav ul li:nth-child(1) a span {width:46px;}
+#header nav#cube-nav ul li:nth-child(2) a,
+#header nav#cube-nav ul li:nth-child(2) a span {width:54px;}
+#header nav#cube-nav ul li:nth-child(3) a,
+#header nav#cube-nav ul li:nth-child(3) a span {width:80px;}
+#header nav#cube-nav ul li:nth-child(4) a,
+#header nav#cube-nav ul li:nth-child(4) a span {width:30px;}
+#header nav#cube-nav ul li:nth-child(5) a,
+#header nav#cube-nav ul li:nth-child(5) a span {width:73px;}
+#header nav#cube-nav ul li.active a span {color:#80e0ff;}
+#header nav#cube-nav ul li a span.none-hover {opacity:1;}
+#header nav#cube-nav ul li a span.hovered {opacity:0;}
+#header nav#cube-nav ul li a:hover span.none-hover {opacity:0;}
+#header nav#cube-nav ul li a:hover span.hovered {opacity:1;}
+@media only screen and (max-width:1023px) {
+  #header nav#cube-nav ul li {padding:0 15px;}
+  #header nav#cube-nav ul li:last-child {padding-right:0;}
+  #header nav#cube-nav ul li a span {font-size:14px;}
+}
+@media only screen and (max-width:767px) {
+  #header button#open-nav {display:block;  float:right;  width:30px;  height:60px;  font-size:0;  background:url(../img/open-nav.png) no-repeat center center;  transition:all 0.3s;  outline:none;}
+  #header nav#cube-nav {float:none;  position:fixed;  top:61px;  right:0;  width:0;  height:100%;  opacity:0;}
+  #header nav#cube-nav.open + button#open-nav {background-image: url(../img/close-nav.png);}
+  #header nav#cube-nav ul {width:100%;  height:100%;  padding-bottom:20px;  background:rgba(0,0,0,0.7);}
+  #header nav#cube-nav ul li {float:none;  width:100%;  padding:0 20px;}
+  #header nav#cube-nav ul li:last-child {padding:0 20px;}
+  #header nav#cube-nav ul li a {width:100%;  height:40px;}
+  #header nav#cube-nav ul li a:before {height:3px;}
+  #header nav#cube-nav ul li a:after {height:3px;}
+  #header nav#cube-nav ul li a span {width:100%;  height:40px;  font-size:14px;  line-height:40px;  text-align:right;}
+  #header nav#cube-nav ul li:nth-child(1) a,
+  #header nav#cube-nav ul li:nth-child(1) a span {width:100%;}
+  #header nav#cube-nav ul li:nth-child(2) a,
+  #header nav#cube-nav ul li:nth-child(2) a span {width:100%;}
+  #header nav#cube-nav ul li:nth-child(3) a,
+  #header nav#cube-nav ul li:nth-child(3) a span {width:100%;}
+  #header nav#cube-nav ul li:nth-child(4) a,
+  #header nav#cube-nav ul li:nth-child(4) a span {width:100%;}
+  #header nav#cube-nav ul li:nth-child(5) a,
+  #header nav#cube-nav ul li:nth-child(5) a span {width:100%;}
+}
+#header.scrolled {border-bottom:1px solid rgba(0,0,0,0.3);  background:white;}
+#header.scrolled h1.header-logo a img.navy-logo:not(.m-logo) {display:inline;  opacity:1;}
+#header.scrolled h1.header-logo a img.white-logo:not(.m-logo) {display:none;  opacity:0;}
+#header.scrolled nav#cube-nav ul li a:before {background:#555;}
+#header.scrolled nav#cube-nav ul li a:after {background:#555;}
+#header.scrolled nav#cube-nav ul li.active a:before {background:#3267b1;}
+#header.scrolled nav#cube-nav ul li.active a:after {background:#3267b1;}
+#header.scrolled nav#cube-nav ul li a span {color:#555;}
+#header.scrolled nav#cube-nav ul li.active a span {color:#3267b1;}
+@media only screen and (max-width:767px) {
+  #header.scrolled button#open-nav {background-image:url(../img/open-nav-navy.png);}
+  #header.scrolled nav#cube-nav.open + button#open-nav {background-image: url(../img/close-nav-navy.png);}
+  #header.scrolled h1.header-logo a img.white-logo.m-logo {display:none;}
+  #header.scrolled h1.header-logo a img.navy-logo.m-logo {display:inline;}
+  #header.scrolled h1.header-logo a img.navy-logo:not(.m-logo) {display:none;}
+  #header.scrolled h1.header-logo a img.white-logo:not(.m-logo) {display:none;}
+  #header.scrolled nav#cube-nav ul li a span {color:white;}
+  #header.scrolled nav#cube-nav ul li a:before {background:white;}
+  #header.scrolled nav#cube-nav ul li a:after {background:white;}
+  #header.scrolled nav#cube-nav ul li.active a:before {background:#80e0ff;}
+  #header.scrolled nav#cube-nav ul li.active a:after {background:#80e0ff;}
+  #header.scrolled nav#cube-nav ul li.active a span {color:#80e0ff;}
+}
+
+
+/* 푸터 */
+#footer {clear:both;  width:100%;  padding:50px 0;  background:#f2f2f2;}
+#footer .footer-logo {float:left;  width:auto;  padding-right:30px;  line-height:75px;  font-size:0;  text-align:left;}
+#footer .footer-logo img {vertical-align:middle;}
+#footer .footer-info {float:left;  width:calc(100% - 402px);  font-size:15px;  color:#777;  line-height:25px;}
+#footer .footer-info span {letter-spacing:-0.5px;}
+#footer .footer-info span:after {content:'|';  font-size:15px;  color:#999;  margin:0 10px;  line-height:25px;  vertical-align:top:}
+#footer .footer-info span:last-child:after,
+#footer .footer-info span.pc-last:after {content:'';  display:block;}
+#footer .footer-sns {float:right;  width:auto;  font-size:0;  text-align:right;  line-height:75px;}
+#footer .footer-sns a.sns-btn {display:inline-block;  width:50px;  height:50px;  margin:0 5px;  vertical-align:middle;}
+@media only screen and (max-width:1023px) {
+  #footer .footer-logo {float:none;  width:100%;  padding-right:0;  line-height:50px;  text-align:center;}
+  #footer .footer-info {float:none;  width:100%;  padding-top:20px;  text-align:center;}
+  #footer .footer-info span {display:block;  word-break:keep-all;  font-size:14px;  color:#999;}
+  #footer .footer-info span:after {display:none;  content:'';}
+  #footer .footer-sns {float:none;  width:100%;  padding-top:40px;  text-align:center;  line-height:50px;}
+}
+
+
+
+
+/* 콘텐츠 */
+.contents {clear:both;  width:100%;  overflow:hidden;}
+.contents section {clear:both;  width:100%;}
+.section-title {width:100%;}
+.section-title h2 {width:100%;  height:60px;  font-size:48px;  color:#3267b1;  text-align:center;  line-height:48px;}
+.section-title p.title-text {width:100%;  padding-bottom:50px;  font-size:14px;  color:#a5abbb;  line-height:25px;  letter-spacing:0;  text-align:center;}
+.section-contents {width:100%;  overflow:hidden;}
+@media only screen and (max-width:1023px) {
+  .section-title h2 {height:auto;  font-size:32px;  padding-bottom:10px;  line-height:32px;}
+  .section-title p.title-text {padding-bottom:40px;  line-height:20px;  font-size:13px;  font-weight:300;}
+}
+
+
+
+/* 메인비주얼 */
+section#cube-home {height:680px;  padding-top:80px;  background:url(../img/mv.png) no-repeat center top;}
+section#cube-home .wrap {height:100%;  padding-top:140px;  background:url(../img/mv-phone.png) no-repeat 90% bottom;}
+section#cube-home h2 {font-size:60px;  color:white;  line-height:60px;  letter-spacing:-3px;  font-weight:700;}
+section#cube-home p {color:white;}
+section#cube-home p.home-text-upper {padding-bottom:20px;  font-size:30px;  line-height:40px;}
+section#cube-home p.home-text-lower {padding-bottom:40px;  font-size:14px;  line-height:24px;  font-weight:200;  letter-spacing:0;  word-break:keep-all;}
+section#cube-home a {width:250px;  height:60px;  border-radius:30px;  font-size:15px;  color:#163194;  text-align:center;  line-height:60px;  letter-spacing:6px;  font-weight:500;  background:white url(../img/mv-btn-line.png) no-repeat left center;  transition:all 0.5s;}
+section#cube-home a:hover {color:white;  background-color:#163194;}
+@media only screen and (max-width:1023px) {
+  section#cube-home {height:100vh;  padding-top:35vh;  -webkit-background-size:cover;  background-size:cover;  position:relative;  background-attachment:fixed;}
+  section#cube-home:after {content:'';  position:absolute;  top:0;  left:0;  display:block;  width:100%;  height:100%;  background:url(../img/mv-phone-tab.png) no-repeat 90% center;}
+  section#cube-home .wrap {padding-top:0;  background:none;}
+  section#cube-home a {color:white;  background-color:#163194;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-home {height:500px;  padding-top:120px;}
+  section#cube-home:after {display:none;}
+  section#cube-home h2 {padding-bottom:20px;  font-size:40px;  line-height:40px;  letter-spacing:-2px;}
+  section#cube-home p.home-text-upper {padding-bottom:20px;  font-size:20px;  line-height:30px;}
+  section#cube-home a {width:100%;  height:40px;  border-radius:20px;  line-height:40px;  font-weight:300;  background-image:none;}
+
+}
+
+
+/* 더 큐브 소개 */
+section#cube-about {padding:100px 0;}
+section#cube-about .about-left,
+section#cube-about .about-right {float:left;  width:50%;  overflow:hidden;}
+section#cube-about .about-left h2 {width:100%;  font-size:50px;  color:#3267b1;  line-height:50px;  letter-spacing:-3px;}
+section#cube-about .about-left span.about-text-1 {float:left;  display:block;  width:57.894736842105263157894736842105%;  padding-top:80px;  font-size:20px;  color:#777;  line-height:20px;}
+section#cube-about .about-left p {clear:both;  width:100%;  padding-top:30px;  padding-right:30px;  font-size:15px;  color:#888;  line-height:30px;  font-weight:300;  word-break:keep-all;}
+section#cube-about .about-right {padding-top:60px;  font-size:0;  text-align:right;}
+section#cube-about .about-right .cube-video {width:100%;  height:0;  padding-bottom:56.25%;  position:relative;}
+section#cube-about .about-right .cube-video iframe.cube-videoplayer {position:absolute;  top:0;  right:0;  width:100%;  height:100%;}
+@media only screen and (max-width:1199px) {
+  section#cube-about .about-left {float:none;  width:100%;}
+  section#cube-about .about-left p {padding:0;  text-align:center;}
+  section#cube-about .about-right {float:none;  width:100%;}
+}
+@media only screen and (max-width:1023px) {
+  section#cube-about .about-left p {font-size:14px;  font-weight:200;}
+}
+
+
+/* 더 큐브 특징 */
+/* 더 큐브 특징 - 특징 */
+section#cube-features .cube-features {clear:both;  width:100%;  padding:100px 0;  background:#f2f2f2;}
+section#cube-features .cube-features .features-phone {float:left;  width:38.59649122807017543859649122807%;}
+section#cube-features .cube-features .features-phone .slider-wrap {width:100%;  height:600px;  overflow:hidden;}
+section#cube-features .cube-features ul#feature-slider {height:600px;}
+section#cube-features .cube-features ul#feature-slider li {height:600px;  font-size:0;  text-align:center;}
+section#cube-features .cube-features .feature-info {float:left;  width:61.40350877192982456140350877193%;}
+section#cube-features .cube-features .feature-info a.phone-pager-item {width:100%;  height:180px;  padding-left:180px;  margin-bottom:30px;  background:white url(../img/feature-pager-bg.png) no-repeat -950px top;  position:relative;  transition:all 0.5s;  overflow:hidden;}
+section#cube-features .cube-features .feature-info a.phone-pager-item:before {content:'';  position:absolute;  top:0;  left:0;  display:block;  width:180px;  height:180px;  background:url(../img/feature-pager-edge.png) no-repeat left top;}
+section#cube-features .cube-features .feature-info a.phone-pager-item.active,
+section#cube-features .cube-features .feature-info a.phone-pager-item:hover {background-position:left top;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .icon {float:left;  width:180px;  height:180px;  text-align:center;  line-height:180px;  font-size:0;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .icon img {vertical-align:middle;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .icon img.m-pager {display:none;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .icon img:not(.m-pager).basic {display:inline;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .icon img:not(.m-pager).hover {display:none;}
+section#cube-features .cube-features .feature-info a.phone-pager-item:hover .icon img:not(.m-pager).basic,
+section#cube-features .cube-features .feature-info a.phone-pager-item.active .icon img:not(.m-pager).basic {display:none;}
+section#cube-features .cube-features .feature-info a.phone-pager-item:hover .icon img:not(.m-pager).hover,
+section#cube-features .cube-features .feature-info a.phone-pager-item.active .icon img:not(.m-pager).hover {display:inline;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text {float:left;  width:calc(100% - 180px);  padding-top:35px;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text h3 {width:100%;  padding-bottom:20px;  font-size:30px;  color:#333;  line-height:30px;  font-weight:400;  letter-spacing:0;  transition:all 0.3s;}
+section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text p {width:100%;  font-size:14px;  color:#888;  line-height:18px;  letter-spacing:0;  font-weight:300;  transition:all 0.3s;}
+section#cube-features .cube-features .feature-info a.phone-pager-item.active .pager-text h3,
+section#cube-features .cube-features .feature-info a.phone-pager-item:hover .pager-text h3 {color:white;}
+section#cube-features .cube-features .feature-info a.phone-pager-item.active .pager-text p,
+section#cube-features .cube-features .feature-info a.phone-pager-item:hover .pager-text p {color:white;}
+@media only screen and (max-width:1023px) {
+  section#cube-features .cube-features .features-phone .slider-wrap {height:400px;}
+  section#cube-features .cube-features ul#feature-slider {height:400px;}
+  section#cube-features .cube-features ul#feature-slider li {height:400px;}
+  section#cube-features .cube-features ul#feature-slider li img {height:100%;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item {height:120px;  padding-left:0;  margin-bottom:20px;  transition:all 0.8s;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item:before {display:none;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .icon {width:120px;  height:120px;  line-height:120px;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .icon img:not(.m-pager) {display:none !important;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .icon img.m-pager.basic {display:inline;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .icon img.m-pager.hover {display:none;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item:hover .icon img.m-pager.basic,
+  section#cube-features .cube-features .feature-info a.phone-pager-item.active .icon img.m-pager.basic {display:none;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item:hover .icon img.m-pager.hover,
+  section#cube-features .cube-features .feature-info a.phone-pager-item.active .icon img.m-pager.hover {display:inline;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text {width:calc(100% - 120px);  padding-top:20px;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text h3 {padding-bottom:10px;  font-size:20px;  line-height:20px;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text p {font-size:13px;  color:#333;  font-weight:200;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-features .cube-features .features-phone {float:none;  width:100%;  padding-bottom:40px;}
+  section#cube-features .cube-features .features-phone .slider-wrap {height:400px;}
+  section#cube-features .cube-features ul#feature-slider {height:400px;}
+  section#cube-features .cube-features ul#feature-slider li {height:400px;}
+  section#cube-features .cube-features ul#feature-slider li img {height:100%;}
+  section#cube-features .cube-features .feature-info {float:none;  width:100%;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item {float:left;  width:33.33333333%;  height:auto;  margin-bottom:0;  transition:all 0.5s;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .icon {float:none;  width:100%;  height:80px;  line-height:80px;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text {width:100%;  padding-top:0;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text h3 {font-size:14px;  text-align:center;  font-weight:300;}
+  section#cube-features .cube-features .feature-info a.phone-pager-item .pager-text p {display:none;}
+}
+/* 더 큐브 특징 - 보안 */
+section#cube-features .cube-security {clear:both;  width:100%;  padding:100px 0;  background:url(../img/security-bg.png) no-repeat center top;  -webkit-background-size:cover;  background-size:cover;}
+section#cube-features .cube-security .section-title h2 {color:white;}
+section#cube-features .cube-security .id-system {text-align:center;}
+section#cube-features .cube-security .id-system img {object-fit:contain;}
+section#cube-features .cube-security .protocol-text {width:100%;  padding:50px 0;  font-size:18px;  color:#fad401;  text-align:center;  line-height:28px;}
+section#cube-features .cube-security ul.encrypt-system {width:100%;  overflow:hidden;}
+section#cube-features .cube-security ul.encrypt-system li {float:left;  width:48.684210526315789473684210526316%;  height:100px;  background:#2395ff;  overflow:hidden;}
+section#cube-features .cube-security ul.encrypt-system li:first-child {margin-right:2.6315789473684210526315789473684%;}
+section#cube-features .cube-security ul.encrypt-system li h3 {float:left;  width:36.036036036036036036036036036036%;  font-size:20px;  color:white;  font-weight:300;  text-align:center;  line-height:100px;  letter-spacing:-0.5px;}
+section#cube-features .cube-security ul.encrypt-system li p {float:left;  width:63.963963963963963963963963963964%;  padding:20px 20px 20px 0;  font-size:14px;  color:white;  font-weight:200;  line-height:20px;  letter-spacing:0;}
+@media only screen and (max-width:1199px) {
+  section#cube-features .cube-security .protocol-text {font-size:15px;  line-height:25px;}
+  section#cube-features .cube-security ul.encrypt-system li {height:auto;  padding:20px 0;}
+  section#cube-features .cube-security ul.encrypt-system li h3 {float:none;  width:100%;  line-height:20px;  padding-bottom:20px;}
+  section#cube-features .cube-security ul.encrypt-system li p {float:none;  width:100%;  padding:0;  text-align:center;}
+}
+@media only screen and (max-width:1023px) {
+  section#cube-features .cube-security ul.encrypt-system li p {font-size:13px;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-features .cube-security ul.encrypt-system li {float:none;  width:100%;  margin-bottom:30px;}
+  section#cube-features .cube-security ul.encrypt-system li:last-child {margin-bottom:0;}
+}
+
+
+
+
+
+
+/* 더 큐브 앱 */
+/* 더 큐브 앱 - 개요 */
+section#cube-app .app-summary {clear:both;  width:100%;  padding:100px 0 0;}
+section#cube-app .app-summary #app-summary-pager {width:100%;  margin-bottom:50px;  font-size:0;  text-align:center;  overflow:hidden;}
+#app-summary-pager a.app-summary-pager-item {display:inline-block;  width:120px;  height:100px;}
+#app-summary-pager a.app-summary-pager-item .icon {width:100%;  height:70px;  text-align:center;  line-height:90px;}
+#app-summary-pager a.app-summary-pager-item .icon img {vertical-align:middle;}
+#app-summary-pager a.app-summary-pager-item .icon img.m-pager {display:none;}
+#app-summary-pager a.app-summary-pager-item .icon img:not(.m-pager).basic {display:inline;}
+#app-summary-pager a.app-summary-pager-item .icon img:not(.m-pager).active {display:none;}
+#app-summary-pager a.app-summary-pager-item.active .icon img:not(.m-pager).basic {display:none;}
+#app-summary-pager a.app-summary-pager-item.active .icon img:not(.m-pager).active {display:inline;}
+#app-summary-pager a.app-summary-pager-item p {width:100%;  font-size:16px;  color:#999;  text-align:center;  line-height:30px;  font-weight:300;  letter-spacing:-0.5px;}
+#app-summary-pager a.app-summary-pager-item.active p {color:#3267b1}
+section#cube-app .app-summary .app-summary-controls {float:left;  width:4.3859649122807017543859649122807%;  height:480px;}
+section#cube-app .app-summary .app-summary-controls a {width:100%;  height:100%;}
+section#cube-app .app-summary .app-summary-prev a {background:url(../img/app-summary-left.png) no-repeat left center;}
+section#cube-app .app-summary .app-summary-next a {background:url(../img/app-summary-right.png) no-repeat right center;}
+section#cube-app .app-summary .app-summary-slide-wrap {float:left;  width:91.228070175438596491228070175439%;  height:480px;}
+ul#app-summary-slider {width:100%;  height:480px;  overflow:hidden;}
+ul#app-summary-slider li {width:100%;  height:480px;  overflow:hidden;  background-position:left bottom;  background-repeat:no-repeat;}
+ul#app-summary-slider li .text {float:right;  width:50%;  padding:0 50px;}
+ul#app-summary-slider li .text h3 {width:100%;  padding-bottom:30px;  font-size:30px;  color:#333;  line-height:30px;  font-weight:300;}
+ul#app-summary-slider li .text p {width:100%;  font-size:16px;  color:#555;  line-height:30px;  font-weight:200;  letter-spacing:-0.5px;  word-break:keep-all;}
+ul#app-summary-slider li.app-summary-1 {padding-top:240px;  background-image:url(../img/app-summary-1.png);}
+ul#app-summary-slider li.app-summary-2 {padding-top:140px;  background-image:url(../img/app-summary-2.png);}
+ul#app-summary-slider li.app-summary-3 {padding-top:240px;  background-image:url(../img/app-summary-3.png);}
+ul#app-summary-slider li.app-summary-4 {padding-top:240px;  background-image:url(../img/app-summary-4.png);}
+ul#app-summary-slider li.app-summary-5 {padding-top:240px;  background-image:url(../img/app-summary-5.png);}
+@media only screen and (max-width:1199px) {
+  ul#app-summary-slider li .text {width:50%;  margin-right:50px;  padding:30px;  text-align:right;  background:rgba(255,255,255,0.5);}
+  ul#app-summary-slider li .text p {font-size:14px;}
+}
+@media only screen and (max-width:1023px) {
+  section#cube-app .app-summary .app-summary-controls {display:none;  float:none;}
+  section#cube-app .app-summary .app-summary-slide-wrap {float:none;  width:100%;  height:auto;  overflow:hidden;  padding-bottom:100px;}
+  ul#app-summary-slider {height:auto;}
+  ul#app-summary-slider li {height:auto;  padding-top:470px !important;  background-position:center top;}
+  ul#app-summary-slider li .text {float:none;  width:100%;  margin-right:0;  padding:40px;  border-top:1px solid #e1e1e1;  border-bottom:1px solid #e1e1e1;  text-align:left;  background:#f8f8f8;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-app .app-summary #app-summary-pager {width:100%;  margin-bottom:50px;  font-size:0;  text-align:center;  overflow:hidden;}
+  #app-summary-pager a.app-summary-pager-item {display:block;  float:left;  width:20%;  height:70px;}
+  #app-summary-pager a.app-summary-pager-item .icon {height:50px;  line-height:50px;}
+  #app-summary-pager a.app-summary-pager-item .icon img:not(.m-pager) {display:none !important;}
+  #app-summary-pager a.app-summary-pager-item .icon img.m-pager.basic {display:inline;}
+  #app-summary-pager a.app-summary-pager-item .icon img.m-pager.active {display:none;}
+  #app-summary-pager a.app-summary-pager-item.active .icon img.m-pager.basic {display:none;}
+  #app-summary-pager a.app-summary-pager-item.active .icon img.m-pager.active {display:inline;}
+  #app-summary-pager a.app-summary-pager-item p {font-size:12px;  line-height:20px;}
+  ul#app-summary-slider {height:auto;}
+  ul#app-summary-slider li {height:auto;  padding-top:0 !important;  font-size:0;  background:none !important;}
+  ul#app-summary-slider li img {width:100%;  object-fit:contain;}
+  ul#app-summary-slider li .text {padding:15px;  background:transparent;}
+  ul#app-summary-slider li .text h3 {padding-bottom:20px;  font-size:20px;  line-height:20px;}
+  ul#app-summary-slider li .text p {font-size:13px;  color:#777;  line-height:20px;  letter-spacing:0;  font-weight:300;}
+}
+/* 더 큐브 앱 - 미리보기 */
+section#cube-app .app-preview {clear:both;  width:100%;  padding:100px 0;  background:url(../img/app-preview-bg.png) no-repeat center top;  -webkit-background-size:cover;  background-size:cover;}
+section#cube-app .app-preview .section-contents {width:100%;  padding:0 100px;}
+section#cube-app .app-preview .section-title h2 {color:white;}
+section#cube-app .app-preview .preview-controls {float:left;  width:100px;  height:700px;}
+section#cube-app .app-preview .preview-controls a {width:100%;  height:100%;}
+section#cube-app .app-preview .preview-prev {background:url(../img/app-preview-left.png) no-repeat left center;}
+section#cube-app .app-preview .preview-next {background:url(../img/app-preview-right.png) no-repeat right center;}
+section#cube-app .app-preview .preview-slide {float:left;  width:calc(100% - 200px);  padding:0 120px;  height:700px;  overflow:hidden;  position:relative;}
+ul#preview-slide {width:100%;  height:700px;  overflow:hidden;}
+ul#preview-slide li {width:300px !important;  height:700px;  margin-right:20px;}
+ul#preview-slide li .preview-img {width:100%;  height:600px;  font-size:0;  text-align:center;}
+ul#preview-slide li .preview-img img {display:none;  vertical-align:bottom;}
+ul#preview-slide li .preview-img img.front {display:inline;}
+ul#preview-slide li p.preview-text {width:100%;  font-size:23px;  color:white;  line-height:100px;  text-align:center;  letter-spacing:0;  font-weight:300;}
+ul#preview-slide li.active p.preview-text {font-size:30px;  font-weight:500;}
+@media only screen and (max-width:1900px) {
+  section#cube-app .app-preview .section-contents {max-width:1200px;  margin:0 auto;  padding:0 30px;}
+  section#cube-app .app-preview .preview-slide {padding:0;}
+}
+@media only screen and (max-width:1199px) {
+  section#cube-app .app-preview .section-contents {width:720px;  padding:0;}
+  section#cube-app .app-preview .preview-controls {height:610px;}
+  section#cube-app .app-preview .preview-slide {height:610px;}
+  ul#preview-slide {height:610px;}
+  ul#preview-slide li {width:250px !important;  height:610px;}
+  ul#preview-slide li .preview-img {height:506px;}
+  ul#preview-slide li .preview-img img.front {display:none;}
+  ul#preview-slide li .preview-img img.middle {display:inline;}
+}
+@media only screen and (max-width:1023px) {
+  section#cube-app .app-preview .section-contents {max-width:688px;  padding:0;}
+  section#cube-app .app-preview .preview-controls {height:560px;}
+  section#cube-app .app-preview .preview-slide {height:560px;}
+  ul#preview-slide {height:560px;}
+  ul#preview-slide li {height:560px;  margin:0;}
+  ul#preview-slide li .preview-img {height:460px;}
+  ul#preview-slide li .preview-img img.middle {display:none;}
+  ul#preview-slide li .preview-img img.back {display:inline;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-app .app-preview .section-contents {max-width:320px;  padding:0 20px;}
+  section#cube-app .app-preview .preview-controls {display:none;}
+  section#cube-app .app-preview .preview-slide {width:100%;}
+  ul#preview-slide li {width:280px !important;}
+}
+/* 더 큐브 앱 - 다운로드 */
+section#cube-app .app-down {clear:both;  width:100%;  margin-top:235px;  padding:100px 0;  background:url(../img/app-down-bg.png) no-repeat center bottom;  -webkit-background-size:cover;  background-size:cover;}
+section#cube-app .app-down .wrap {overflow:visible;  position:relative;  z-index:0;}
+section#cube-app .app-down .wrap:after {content:'';  position:absolute;  top:-400px;  right:0;  z-index:9;  display:block;  width:745px;  height:700px;  background:url(../img/app-down-deco.png) no-repeat center center;}
+section#cube-app .app-down .down-text {width:50%;  overflow:hidden;  position:relative;  z-index:99;}
+section#cube-app .app-down .down-text h2 {width:100%;  padding-bottom:30px;  font-size:50px;  color:white;  line-height:60px;  letter-spacing:-2px;}
+section#cube-app .app-down .down-text h2 span {font-weight:200;}
+section#cube-app .app-down .down-text p {width:90%;  padding-bottom:50px;  font-size:20px;  color:white;  line-height:30px;  font-weight:100;  word-break:keep-all;}
+section#cube-app .app-down .down-text a.app-down-btn {width:200px;  height:60px;  padding:10px 0;  border-radius:5px;  font-size:20px;  color:#354162;  line-height:20px;  text-align:center;  letter-spacing:0;  background:white;}
+section#cube-app .app-down .down-text a.app-down-btn:before {content:'';  display:inline-block;  width:17px;  height:20px;  background:url(../img/google-play.png) no-repeat left center;  vertical-align:middle;}
+section#cube-app .app-down .down-text a.app-down-btn span {font-size:16px;  letter-spacing:-0.5px;}
+@media only screen and (max-width:1199px) {
+  section#cube-app .app-down .wrap:after {right:10px;}
+}
+@media only screen and (max-width:1023px) {
+  section#cube-app .app-down {margin-top:0;}
+  section#cube-app .app-down .wrap:after {top:-200px;  right:30px;  width:500px;  height:470px;  background-image:url(../img/tab-app-down-deco.png);}
+  section#cube-app .app-down .down-text {width:100%;}
+  section#cube-app .app-down .down-text h2 {padding-bottom:20px;  font-size:30px;  line-height:40px;  letter-spacing:-2px;}
+  section#cube-app .app-down .down-text p {width:100%;  font-size:16px;  color:#d6dcf3;  line-height:30px;  font-weight:200;}
+}
+@media only screen and (max-width:767px) {
+  section#cube-app .app-down .wrap:after {top:-150px;  right:15px;  width:280px;  height:263px;  background-image:url(../img/m-app-down-deco.png);}
+  section#cube-app .app-down .down-text {padding-top:100px;}
+  section#cube-app .app-down .down-text h2 {font-size:20px;  line-height:30px;  letter-spacing:-1px;}
+  section#cube-app .app-down .down-text p {padding-bottom:40px;  font-size:14px;}
+  section#cube-app .app-down .down-text a.app-down-btn {width:200px;  height:60px;  margin:0 auto;  font-size:16px;}
+  section#cube-app .app-down .down-text a.app-down-btn:before {height:16px;  -webkit-background-size:contain;  background-size:contain;}
+  section#cube-app .app-down .down-text a.app-down-btn span {font-size:14px;  letter-spacing:0;}
+  }
+
+
+/* CONTACT US */
+section#cube-contact {padding:100px 0;  background:#f8f8f8;}
+section#cube-contact .cube-map {float:left;  width:48.684210526315789473684210526316%;  height:410px;  margin-right:2.6315789473684210526315789473684%;  background:url(../img/cube-map.png) no-repeat center center;}
+section#cube-contact form.cube-contact {float:left;  width:48.684210526315789473684210526316%;}
+section#cube-contact form.cube-contact fieldset {width:100%;  font-size:0;  text-align:center;}
+section#cube-contact form.cube-contact input {float:left;  height:50px;  border-radius:5px;  border:1px solid #d3d2d2;  padding:19px;  margin-bottom:15px;  font-size:16px;  color:#777;  line-height:20px;  font-weight:300;  background:white;}
+section#cube-contact form.cube-contact input.contact-half {width:48.648648648648648648648648648649%;}
+section#cube-contact form.cube-contact input.contact-full {width:100%;}
+section#cube-contact form.cube-contact input.mr15 {margin-right:2.7027027027027027027027027027027%;}
+section#cube-contact form.cube-contact textarea.contact-inquiry {clear:both;  width:100%;  height:170px;  border:1px solid #d3d2d2;  border-radius:5px;  padding:19px;  font-size:16px;  color:#777;  background:white;  resize:none;}
+section#cube-contact form.cube-contact input.contact-btn {float:none;  display:inline-block;  width:120px;  height:34px;  border-radius:17px;  border:0;  padding:0;  margin:15px 5px 0;  font-size:16px;  color:white;  background:#959595;}
+section#cube-contact form.cube-contact input.submit-btn {background:#3267b1;}
+@media only screen and (max-width:1023px) {
+  section#cube-contact .cube-map {float:none;  width:100%;  height:350px;  margin-right:0;  margin-bottom:40px;}
+  section#cube-contact form.cube-contact {float:none;  width:100%;}
+  section#cube-contact form.cube-contact input {height:40px;  padding:9px;  margin-bottom:10px;  font-size:14px;}
+  section#cube-contact form.cube-contact textarea.contact-inquiry {padding:9px;  font-size:14px;}
+  section#cube-contact form.cube-contact input.contact-btn {font-size:14px;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

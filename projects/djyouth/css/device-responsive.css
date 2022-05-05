@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* 기기반응에 따른 요소 활성화/비활성화 장치 */
+
+/* Copyright (c) 2018 (주)아이앤시티.inct- All Right Reserved.inct- */
+
+/* 반응시점
+ * wide pc - 1200px 이상
+ * 4:3 pc - 1024px 이상
+ * tablet - 768px 이상
+ * mobile - 320px 이상
+*/
+/* 축약어
+ * -+-+- 기기 -+-+-
+ * wide = wide pc
+ * pc = 4:3 pc
+ * tab = tablet
+ * m = mobile
+
+ * -+-+- display 형태 -+-+-
+ * b = block
+ * i = inline
+ * ib = inline-block
+
+ * -+-+- 이상/이하 -+-+-
+ * mt = more than (~ 이상)
+ * lt = less than (~ 이하)
+*/
+
+
+
+/* 특정 기기에서 숨기기 */
+/* wide pc */
+@media only screen and (min-width:1200px) {
+	.inct-wide-none {display:none !important;}
+}
+/* 4:3 pc */
+@media only screen and (max-width:1199px) and (min-width:1024px) {
+	.inct-pc-none {display:none !important;}
+}
+/* 태블릿 */
+@media only screen and (max-width:1023px) and (min-width:768px) {
+	.inct-tab-none {display:none !important;}
+}
+/* 모바일 */
+@media only screen and (max-width:767px) {
+	.inct-m-none {display:none !important;}
+}
+
+
+
+/* 특정 기기에서만 출력 */
+/* wide pc */
+@media only screen and (min-width:1200px) {
+	.inct-wide-b {display:block !important;}
+	.inct-wide-i {display:inline !important;}
+	.inct-wide-ib {display:inline-block !important;}
+}
+/* 4:3 pc */
+@media only screen and (max-width:1199px) and (min-width:1024px) {
+	.inct-pc-b {display:block !important;}
+	.inct-pc-i {display:inline !important;}
+	.inct-pc-ib {display:inline-block !important;}
+}
+/* 태블릿 */
+@media only screen and (max-width:1023px) and (min-width:768px) {
+	.inct-tab-b {display:block !important;}
+	.inct-tab-i {display:inline !important;}
+	.inct-tab-ib {display:inline-block !important;}
+}
+/* 모바일 */
+@media only screen and (max-width:767px) {
+	.inct-m-b {display:block !important;}
+	.inct-m-i {display:inline !important;}
+	.inct-m-ib {display:inline-block !important;}
+}
+
+
+
+/* 특정 기기 "이상"의 해상도에서 출력 */
+/* wide pc */
+@media only screen and (min-width:1200px) {
+	.inct-wide-mt-b {display:block !important;}
+	.inct-wide-mt-i {display:inline !important;}
+	.inct-wide-mt-ib {display:inline-block !important;}
+}
+/* 4:3 pc */
+@media only screen and (min-width:1024px) {
+	.inct-pc-mt-b {display:block !important;}
+	.inct-pc-mt-i {display:inline !important;}
+	.inct-pc-mt-ib {display:inline-block !important;}
+}
+/* 태블릿 이상에서만 출력 */
+@media only screen and (min-width:768px) {
+	.inct-tab-mt-b {display:block !important;}
+	.inct-tab-mt-i {display:inline !important;}
+	.inct-tab-mt-ib {display:inline-block !important;}
+}
+/* 모바일 이상에서 출력하는 장치는 굳이 필요 없음 */
+
+
+
+/* 특정 기기 "이상"의 해상도에서 숨기기 */
+/* wide pc */
+@media only screen and (min-width:1200px) {
+	.inct-wide-mt-none {display:none !important;}
+}
+/* 4:3 pc */
+@media only screen and (min-width:1024px) {
+	.inct-pc-mt-none {display:none !important;}
+}
+/* 태블릿 이상에서만 출력 */
+@media only screen and (min-width:768px) {
+	.inct-tab-mt-none {display:none !important;}
+}
+/* 모바일 이상에서 숨기는 장치는 굳이 필요 없음 */
+
+
+
+
+/* 특정 기기 "이하"의 해상도에서 출력 */
+/* wide pc 이하에서 출력하는 장치는 굳이 필요 없음 */
+/* 4:3 pc */
+@media only screen and (max-width:1199px) {
+	.inct-pc-lt-b {display:block !important;}
+	.inct-pc-lt-i {display:inline !important;}
+	.inct-pc-lt-ib {display:inline-block !important;}
+}
+/* 태블릿 */
+@media only screen and (max-width:1023px) {
+	.inct-tab-lt-b {display:block !important;}
+	.inct-tab-lt-i {display:inline !important;}
+	.inct-tab-lt-ib {display:inline-block !important;}
+}
+/* 모바일 */
+@media only screen and (max-width:767px) {
+	.inct-m-lt-b {display:block !important;}
+	.inct-m-lt-i {display:inline !important;}
+	.inct-m-lt-ib {display:inline-block !important;}
+}
+
+
+/* 특정 기기 "이하"의 해상도에서 숨기기 */
+/* wide pc 이하에서 숨기는 장치는 굳이 필요 없음 */
+/* 4:3 pc */
+@media only screen and (max-width:1199px) {
+	.inct-pc-lt-none {display:none !important;}
+}
+/* 태블릿 */
+@media only screen and (max-width:1023px) {
+	.inct-tab-lt-none {display:none !important;}
+}
+/* 모바일 */
+@media only screen and (max-width:767px) {
+	.inct-m-lt-none {display:none !important;}
+}

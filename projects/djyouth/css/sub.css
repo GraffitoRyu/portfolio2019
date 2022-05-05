@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+
+
+
+
+/* 대관신청 */
+
+/* 대관 예약 - rent03 */
+.inct-sc .sc-left {float:left;  width:48.684210526315789473684210526316%;  margin-right:2.6315789473684210526315789473684%;  padding-bottom:40px;}
+.inct-sc .sc-right {float:left;  width:48.684210526315789473684210526316%;  padding-bottom:40px;}
+h3.sc-title.rent {padding-bottom:50px;}
+/* 대관할 공간의 요약 정보 */
+.space-summary-info {width:100%;  padding-bottom:100px;  text-align:center;}
+.space-summary-info span.circle-side-btn {display:inline-block;  width:auto;  padding:0 20px;  margin-bottom:15px;}
+.space-summary-info span.circle-side-btn:hover {background:white;}
+.trip .space-summary-info span.circle-side-btn {color:#e51a94;}
+.rest .space-summary-info span.circle-side-btn {color:#005cb9;}
+.dododo .space-summary-info span.circle-side-btn {color:#fa4c06;}
+.space-summary-info h3.sc-title {font-size:25px;  line-height:25px;  padding-bottom:15px;}
+.trip .space-summary-info h3.sc-title {color:#e51a94;}
+.rest .space-summary-info h3.sc-title {color:#005cb9;}
+.dododo .space-summary-info h3.sc-title {color:#fa4c06;}
+.space-summary-info p.space-info {font-size:15px;  color:#555;  text-align:center;  line-height:15px;  letter-spacing:0;}
+
+/* 날짜선택 */
+.inct-sc .rent-calendar {width:100%;}
+/* 날짜 선택 - 헤더 */
+.inct-sc .rent-calendar .rent-calendar-header {width:100%;  height:60px;  text-align:center;  font-size:0;}
+.inct-sc .rent-calendar .rent-calendar-header button.rent-calendar-btn {display:inline-block;  width:60px;  height:60px;  vertical-align:top;}
+.inct-sc .rent-calendar .rent-calendar-header button#rent-calendar-left {background:url(../img/rent-left.png) no-repeat center center;}
+.inct-sc .rent-calendar .rent-calendar-header button#rent-calendar-right {background:url(../img/rent-right.png) no-repeat center center;}
+.inct-sc .rent-calendar .rent-calendar-header h5.rent-calendar-date {display:inline-block;  width:auto;  height:60px;  padding-left:4px;  font-size:25px;  color:#555;  line-height:60px;  vertical-align:top;}
+/* 날짜 선택 - 달력 */
+.inct-sc table#rent-calendar {width:100%;  border-top-left-radius:10px;  border-top-right-radius:10px;  overflow:hidden;}
+.inct-sc table#rent-calendar th {width:14.285714285714285714285714285714%;  height:50px;  background:#999;  font-size:15px;  color:white;  font-weight:400;  position:relative;}
+.inct-sc table#rent-calendar th:after {content:'';  position:absolute;  top:15px;  right:0;  display:block;  width:1px;  height:20px;  background:#e1e1e1;}
+.inct-sc table#rent-calendar th:last-child:after {display:none;}
+.inct-sc table#rent-calendar td {width:14.285714285714285714285714285714%;  height:50px;}
+.inct-sc table#rent-calendar td button {width:100%;  height:100%;  border:1px solid #e1e1e1;  border-top:0;  border-left:0;  font-size:16px;  color:#555;  letter-spacing:-0.5px;}
+.inct-sc table#rent-calendar td:first-child button {border-left:1px solid #e1e1e1;}
+.inct-sc table#rent-calendar td.not-this-month button {color:#ccc;  background:#efefef;}
+.inct-sc table#rent-calendar td.passed-day button {color:#ccc;}
+.trip .inct-sc table#rent-calendar td.today button {border-color:#2dc8c2;  border-top:1px solid #2dc8c2;  border-left:1px solid #2dc8c2;}
+.rest .inct-sc table#rent-calendar td.today button {border-color:#005cb9;  border-top:1px solid #005cb9;  border-left:1px solid #005cb9;}
+.dododo .inct-sc table#rent-calendar td.today button {border-color:#fa4c07;  border-top:1px solid #fa4c07;  border-left:1px solid #fa4c07;}
+.inct-sc table#rent-calendar td.selected button {color:white;}
+.trip .inct-sc table#rent-calendar td.selected button {border-color:#2dc8c2;  border-top:1px solid #2dc8c2;  border-left:1px solid #2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc table#rent-calendar td.selected button {border-color:#005cb9;  border-top:1px solid #005cb9;  border-left:1px solid #005cb9;  background:#005cb9;}
+.dododo .inct-sc table#rent-calendar td.selected button {border-color:#fa4c07;  border-top:1px solid #fa4c07;  border-left:1px solid #fa4c07;  background:#fa4c07;}
+.inct-sc table#rent-calendar td.full button {color:#ccc;  background-color:#f8f8f8;}
+/* 날짜 선택 - 달력 안내 */
+.inct-sc ul.rent-notice {width:100%;  overflow:hidden;}
+.inct-sc ul.rent-notice li {float:left;  height:45px;  padding-top:20px;  overflow:hidden;}
+.inct-sc ul.rent-notice li:nth-child(1) {width:34%;}
+.inct-sc ul.rent-notice li:nth-child(2) {width:35%;}
+.inct-sc ul.rent-notice li:nth-child(3) {width:31%;}
+.inct-sc ul.rent-notice li .rent-notice-box {float:left;  width:40px;  height:25px;}
+.trip .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #2dc8c2;}
+.trip .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#2dc8c2;}
+.rest .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #005cb9;}
+.rest .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#005cb9;}
+.dododo .inct-sc ul.rent-notice li .rent-notice-box.today {border:1px solid #fa4c07;}
+.dododo .inct-sc ul.rent-notice li .rent-notice-box.selected {background-color:#fa4c07;}
+.inct-sc ul.rent-notice li .rent-notice-box.passed {border:1px solid #dadada;  background-color:#f8f8f8;}
+.inct-sc ul.rent-notice li p.rent-notice-text {float:left;  font-size:14px;  color:#555;  line-height:25px;  padding-left:20px;}
+
+
+/* 시간선택 */
+.inct-sc ul.select-time {width:100%;  margin-bottom:65px;  border-right:1px solid #dadada;  border-bottom:1px solid #dadada;  overflow:hidden;}
+.inct-sc ul.select-time li {float:left;  width:20%;  height:50px;}
+.inct-sc ul.select-time li button {width:100%;  height:50px;  border:1px solid #dadada;  border-bottom:0;  border-right:0;  font-size:16px;  color:#555;  text-align:center;  line-height:48px;  letter-spacing:-0.5px;}
+.inct-sc ul.select-time li.booked button {color:#ccc;  background:#f8f8f8;}
+.trip .inct-sc ul.select-time li.selected button {color:white;  border-color:#2dc8c2;  background:#2dc8c2;}
+.rest .inct-sc ul.select-time li.selected button {color:white;  border-color:#005cb9;  background:#005cb9;}
+.dododo .inct-sc ul.select-time li.selected button {color:white;  border-color:#fa4c07;  background:#fa4c07;}
+
+
+/* 예약정보 기입 */
+.inct-sc form.rent-info-form {width:100%;}
+.inct-sc form.rent-info-form fieldset {width:100%;  overflow:hidden;}
+.inct-sc form.rent-info-form fieldset label.view {float:left;  width:20%;  height:50px;  margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#555;  text-align:center;  line-height:48px;  letter-spacing:0;  font-weight:500;}
+.inct-sc form.rent-info-form fieldset label.view:after {content:'';  font-size:0;  display:block;  float:right;  width:1px;  height:20px;  margin:14px 0;  background:#dadada;}
+.inct-sc form.rent-info-form fieldset label.purpose-label {height:100px;  line-height:98px;}
+.inct-sc form.rent-info-form fieldset label.purpose-label:after {margin:39px 0;}
+.inct-sc form.rent-info-form fieldset input {float:left;  height:50px;  padding:0 15px;    margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#aaa;  line-height:48px;  letter-spacing:0;  font-weight:300;}
+.inct-sc form.rent-info-form fieldset input#member-count {width:40%;}
+.inct-sc form.rent-info-form fieldset span.limit-member {float:left;  display:block;  width:40%;  height:50px;  margin-bottom:25px;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#555;  text-align:center;  line-height:48px;}
+.inct-sc form.rent-info-form fieldset textarea#purpose {resize:none;  width:80%;  height:100px;  padding:15px;  margin-bottom:25px;  border-left:0;  border-right:0;  border-top:1px solid #929292;  border-bottom:1px solid #929292;  font-size:15px;  color:#aaa;  line-height:20px;  letter-spacing:0;  font-weight:300;}
+
+
+
+/* 신청정보 확인 버튼 */
+.inct-sc .rent-info-check {clear:both;  width:100%;  padding-bottom:40px;}
+
+
+/* 신청정보 */
+.inct-sc ul.rent-info-list {width:100%;  padding:20px 25px;  border:1px solid #dadada;}
+.inct-sc ul.rent-info-list li {float:left;  width:50%;  height:30px;  font-size:15px;  color:#555;  line-height:30px;  font-weight:500;  letter-spacing:0;}
+.inct-sc ul.rent-info-list li:before {margin:13px 10px 0 0;}
+.inct-sc ul.rent-info-list li span {font-weight:400;  color:#999;  letter-spacing:0;}
+
+
+
+/* 예약신청 버튼 */
+.inct-sc .rent-submit {clear:both;  width:100%;  padding-top:40px;}
+.inct-sc .rent-submit input#rent-submit-btn {width:250px;  height:50px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

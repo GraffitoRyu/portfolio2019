@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 유지보수의 용이성을 위해 각 파트별로 CSS를 나눴습니다. */
+
+
+/* 공통 CSS */
+@import url(common.css);
+
+/* 메인페이지 CSS */
+@import url(index.css);
+
+/* 게시판 CSS */
+@import url(board.css);
+
+/* 대관신청 CSS */
+@import url(rent.css);
+
+/* 일정 (달력) CSS */
+@import url(schedule.css);
+
+/* 일반적인 정보제공형 페이지 CSS */
+@import url(info.css);
+
+/* 설계도 CSS */
+@import url(blueprint.css);

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+.go-to-top {position:fixed;  bottom:100px;  right:100px;  z-index:9999;  width:40px;  height:40px;  font-size:13px;  color:white;  font-weight:700;  font-family:'nsq';  letter-spacing:1px;  text-align:center;  line-height:40px;  cursor:pointer;  background:#ff2e71;}
+section.sc-item {clear:both;  width:100%;  overflow:hidden;}
+
+/* sub pages CSS */
+.sv {padding:160px 0 60px;  background:url(../img/sv.png) no-repeat center top;  background-attachment:fixed;  text-align:center;  font-size:0;}
+.sv h2.category {width:100%;  height:140px;  font-size:80px;  color:white;  text-align:center;  line-height:80px;  letter-spacing:-2px;  font-weight:400;}
+.sv p.sv-text {width:100%;  padding-bottom:60px;  font-size:20px;  color:white;  text-align:center;  line-height:40px;  letter-spacing:0;}
+.sv ul#sub-tabmenu {display:inline-block;  width:auto;  margin:0 auto;  overflow:hidden;  background:white;}
+.sv ul#sub-tabmenu li {float:left;  width:200px;  height:60px;  border-left:1px solid #e1e1e1;}
+.sv ul#sub-tabmenu li:first-child {border-left:0;}
+.sv ul#sub-tabmenu li button {width:100%;  height:100%;  font-size:20px;  color:#333;  text-align:center;  line-height:60px;  font-family:'nsq';  letter-spacing:0;  background:url(../img/sv-tab-bg.png) no-repeat -260px center;  transition:all 0.5s;}
+.sv ul#sub-tabmenu li:hover,
+.sv ul#sub-tabmenu li.on {border:0;}
+.sv ul#sub-tabmenu li:hover button,
+.sv ul#sub-tabmenu li.on button {color:white;  background-position:left center;}
+
+
+
+
+/* sub01 */
+.sub01-1 {width:100%;  height:820px;  overflow:hidden;  position:relative;}
+.sub01-1 .intro-box {position:absolute;  top:100px;  left:50%;  z-index:0;  margin-left:-100px;  width:600px;  height:500px;  padding:150px 50px 50px 200px;  background:#633212 url(../img/sub01-intro-bg.png) no-repeat left bottom;}
+.sub01-1 .intro-box:after {content:'';  position:absolute;  top:0;  left:0;  display:block;  width:200px;  height:10px;  background:#f1d657;}
+.sub01-1 .intro-box h3 {width:100%;  height:110px;  text-align:right;  font-size:50px;  color:#9c7861;  line-height:50px;  position:relative;}
+.sub01-1 .intro-box h3 span {position:absolute;  bottom:20px;  right:0;  display:block;  width:285px;  height:53px;  font-size:0;  background:url(../img/sub01-intro-title.png) no-repeat center center;}
+.sub01-1 .intro-box p {width:100%;  border-top:2px solid #e1e1e1;  padding-top:18px;  font-size:15px;  color:#ded0c7;  text-align:right;  line-height:30px;  letter-spacing:0;}
+.sub01-1 .intro-img {position:absolute;  bottom:100px;  left:50%;  margin-left:-500px;  width:500px;  height:500px;  background:url(../img/sub01-intro-img.png) no-repeat center center;  box-shadow:10px 5px 25px rgba(0,0,0,0.6);}
+
+.sub01-2 {width:100%;  overflow:hidden;}
+.sub01-2 .title-box {float:left;  width:45%;  background:#ff9c00;  overflow:hidden;}
+.sub01-2 .title-box .title-text {float:right;  width:480px;  padding:80px;}
+.sub01-2 .title-box h3 {padding-bottom:60px;  font-size:40px;  color:#a26401;  line-height:30px;}
+.sub01-2 .title-box h3 span {font-size:80px;  color:white;  font-weight:800;  line-height:70px;  font-family:'nsq';  letter-spacing:-6px;}
+.sub01-2 .title-box p {border-top:2px solid white;  padding-top:18px;  font-size:15px;  color:white;  line-height:30px;  letter-spacing:0;}
+.sub01-2 .contents-box {float:left;  width:55%;  height:430px;  background:#f8f8f8;  overflow:hidden;}
+.sub01-2 .greetings p {width:720px;  padding:60px;  font-size:15px;  color:#555;  line-height:25px;  letter-spacing:0;  font-family:'nsq';  font-weight:300;}
+
+.sub01-3 {width:100%;  padding:100px 0;  overflow:hidden;}
+.sc-item > h3 {width:100%;  padding-bottom:80px;  font-size:40px;  color:#555;  line-height:40px;  text-align:center;  letter-spacing:0;}
+.sub01-3 ul.sub01-3-list {width:100%;  font-size:0;  text-align:center;  overflow:hidden;}
+.sub01-3 ul.sub01-3-list li {display:inline-block;  width:200px;  height:200px;  padding:50px 0;  border-radius:50%;  margin:0 15px;  background:#ee6925;  vertical-align:top;}
+.sub01-3 ul.sub01-3-list li h4 {width:100%;  height:70px;  font-size:18px;  color:white;  font-family:'nsq';  line-height:20px;  font-weight:700;  letter-spacing:0;}
+.sub01-3 ul.sub01-3-list li p {width:100%;  font-size:15px;  color:white;  line-height:20px;  font-weight:300;  letter-spacing:0;  font-family:'nsq';}
+
+
+
+
+/* sub02 */
+.sub02-1 {padding:100px 0;}
+.sub02-1 h3 {width:100%;  height:180px;  text-align:center;  font-size:0;}
+.sub02-1 h3 img {vertical-align:top;m}
+.sub02-1 ul.sub02-1-list {width:100%;  font-size:0;  text-align:center;  overflow:hidden;}
+.sub02-1 ul.sub02-1-list li {display:inline-block;  width:200px;  margin:0 80px;  text-align:center;  vertical-align:top;  position:relative;}
+.sub02-1 ul.sub02-1-list li:after {content:'';  display:block;  width:160px;  height:1px;  background:#e1e1e1;  position:absolute;  top:100px;  right:-161px;  z-index:99;}
+.sub02-1 ul.sub02-1-list li:last-child:after {content:none;}
+.sub02-1 ul.sub02-1-list li .icon {width:100%;  height:200px;  border-radius:50%;  border:1px solid #e1e1e1;  background:white;  text-align:center;  font-size:0;  line-height:198px;}
+.sub02-1 ul.sub02-1-list li .icon img {vertical-align:middle;}
+.sub02-1 ul.sub02-1-list li h4 {width:100%;  height:20px;  margin:20px 0;  font-size:20px;  color:#555;  letter-spacing:0;  font-family:'nsq';  font-weight:800;  line-height:20px;}
+.sub02-1 ul.sub02-1-list li p {width:100%;  font-size:16px;  color:#555;  line-height:20px;  font-family:'nsq';  letter-spacing:0;}
+.sub02-1 ul.sub02-1-list li p span {display:block;  width:100%;  height:80px;  font-size:13px;  color:#999;  line-height:18px;  letter-spacing:0;  font-family:'nsq';}
+
+.sub02-2 {overflow:hidden;}
+.sub02-2 .title-box {float:left;  width:50%;  height:600px;  background:#994a15 url(../img/sub02-2-bg.png) no-repeat left center;  overflow:hidden;}
+.sub02-2 .title-box .title-text {float:right;  width:600px;  height:600px;  padding:60px;}
+.sub02-2 .title-box .title-text h3 {width:100%;  padding-bottom:50px;  text-align:right;  font-size:40px;  color:#dca580;  letter-spacing:0;  font-weight:400;  line-height:80px;}
+.sub02-2 .title-box .title-text h3 span {font-size:100px;  color:white;  font-weight:400;  letter-spacing:-5px;}
+.sub02-2 .title-box .title-text p {width:100%;  border-top:2px solid #dabd94;  padding-top:48px;  font-size:15px;  color:white;  text-align:right;  letter-spacing:0;  line-height:20px;}
+.sub02-2 .contents-box {float:left;  width:50%;  height:600px;  background:url(../img/sub02-2-bg-2.png) no-repeat center center;}
+.sub02-2 .contents-box ol {width:100%;  height:600px;  padding:60px;  background:rgba(255,205,171,0.9);}
+.sub02-2 .contents-box ol li {width:600px;  height:160px;}
+.sub02-2 .contents-box ol li .count {width:100%;  height:50px;  font-size:40px;  color:#d5915d;  letter-spacing:-4px;  font-family:'nsq';  line-height:40px;  font-weight:800;}
+.sub02-2 .contents-box ol li .count span {color:#994a15;  font-family:'nsq';}
+.sub02-2 .contents-box ol li p {width:100%;  font-size:15px;  color:#333;  line-height:23px;  letter-spacing:0;  font-weight:700;}
+
+
+
+
+
+.sub03-1 {padding-top:100px;  overflow:hidden;}
+.sub03-1 .sub03-1-textbox {float:left;  width:50%;  height:350px;  background:#ffe5d7 url(../img/sub03-1-bg-1.png) no-repeat -100px center;}
+.sub03-1 .sub03-1-textbox p {float:right;  width:600px;  padding:100px 50px;  font-size:20px;  color:#333;  line-height:30px;  letter-spacing:0;  text-align:right;}
+.sub03-1 .sub03-1-img {float:left;  width:50%;  height:350px;  background:url(../img/sub03-1-bg-2.png) no-repeat left center;}
+
+.sub03-2 {padding:100px 0;}
+.sub03-2 ul.sub03-2-list {width:100%;  overflow:hidden;}
+.sub03-2 ul.sub03-2-list li {float:left;  width:33.33333333%;  height:500px;  overflow:hidden;}
+.sub03-2 ul.sub03-2-list li:nth-child(1) {background:url(../img/sub03-2-1.png)  no-repeat center center;}
+.sub03-2 ul.sub03-2-list li:nth-child(2) {background:url(../img/sub03-2-2.png)  no-repeat center center;}
+.sub03-2 ul.sub03-2-list li:nth-child(3) {background:url(../img/sub03-2-3.png)  no-repeat center center;}
+.sub03-2 ul.sub03-2-list li h4.list-title {width:100%;  height:270px;  padding:90px 0;  font-size:30px;  color:white;  text-align:center;  line-height:40px;  font-weight:400;  letter-spacing:0;  position:relative;  background:rgba(56,32,0,0.7);}
+.sub03-2 ul.sub03-2-list li h4.list-title:after {content:'';  display:block;  position:absolute;  bottom:30px;  left:50%;  width:1px;  height:50px;  background:white;}
+.sub03-2 ul.sub03-2-list li p {width:100%;  height:230px;  font-size:20px;  color:white;  text-align:center;  line-height:40px;  letter-spacing:0;  background:rgba(56,32,0,0.7);}
+
+
+
+
+.sub04-1 {padding:100px 0;  overflow:hidden;  text-align:center;}
+.sub04-1 .sub04-logo {width:100%;  height:220px;  font-size::0;  text-align:center;}
+.sub04-1 p {width:100%;  font-size:20px;  color:#555;  line-height:40px;  letter-spacing:0;}
+
+.sub04-2 {padding:100px 0;  border-top:1px solid #eaeaea;  background:#f8f8f8;  overflow:hidden;}
+.sub04-2 ul.sub04-2-list {width:100%;  overflow:hidden;}
+.sub04-2 ul.sub04-2-list li {width:100%;  overflow:hidden;}
+.sub04-2 ul.sub04-2-list li .sub04-2-img {width:545px;  height:350px;  margin-bottom:50px;  background-position:center center;  background-repeat:no-repeat;}
+.sub04-2 ul.sub04-2-list li.img-left .sub04-2-img {float:left;  margin-right:50px;}
+.sub04-2 ul.sub04-2-list li.img-right .sub04-2-img {float:right;  margin-left:50px;}
+.sub04-2 ul.sub04-2-list li:nth-child(1) .sub04-2-img {background-image:url(../img/sub04-2-1.png);}
+.sub04-2 ul.sub04-2-list li:nth-child(2) .sub04-2-img {background-image:url(../img/sub04-2-2.png);}
+.sub04-2 ul.sub04-2-list li:nth-child(3) .sub04-2-img {background-image:url(../img/sub04-2-3.png);}
+.sub04-2 ul.sub04-2-list li:nth-child(4) .sub04-2-img {background-image:url(../img/sub04-2-4.png);}
+.sub04-2 ul.sub04-2-list li:nth-child(5) .sub04-2-img {background-image:url(../img/sub04-2-5.png);}
+.sub04-2 ul.sub04-2-list li:nth-child(6) .sub04-2-img {background-image:url(../img/sub04-2-6.png);}
+.sub04-2 ul.sub04-2-list li .sub04-2-text {float:left;  width:545px;  height:350px;  margin-bottom:50px;  padding-top:20px;  border-top:1px solid #ccc;  border-bottom:1px solid #ccc;}
+.sub04-2 ul.sub04-2-list li.img-left .sub04-2-text {text-align:left;}
+.sub04-2 ul.sub04-2-list li.img-right .sub04-2-text {text-align:right;}
+.sub04-2 ul.sub04-2-list li .sub04-2-text h4 {width:100%;  height:150px;  font-size:50px;  color:#555;  line-height:55px;  letter-spacing:-2px;  font-weight:400;}
+.sub04-2 ul.sub04-2-list li .sub04-2-text p {width:100%;  font-size:20px;  color:#555;  line-height:40px;}
+
+
+
+
+
+.sub05-1 {padding:100px 0;  overflow:hidden;}
+.sub05-1 .map-box {width:100%;  padding-bottom:100px;  overflow:hidden;  font-size:0;  letter-spacing:0;  text-align:center;}
+.sub05-1 .map-box .map {display:inline-block;  width:auto;  padding:29px;  border:1px solid #e1e1e1;  overflow:hidden;}
+.sub05-1 .map-box .map-title {width:100%;  padding:30px 0 20px;  font-weight:0;  text-align:center;}
+.sub05-1 .map-box .map-title img {vertical-align:top;}
+.map-box p {width:100%;  font-size:16px;  color:#999;  text-align:center;  line-height:20px;  font-family:'nsq';  letter-spacing: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.

@@ -1,0 +1,77 @@
+﻿@charset "UTF-8";
+/*
+ * Noto Sans CJK 본고딕 선언
+ * 2018 INCT 인터렉티브디자인부 작성
+*/
+
+
+/* Noto Sans CJK - Thin */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 100;
+  src: url(../fonts/NotoSansThin.eot);
+  src: url(../fonts/NotoSansThin.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansThin.woff) format('woff'),
+       url(../fonts/NotoSansThin.woff) format('truetype');
+}
+/* Noto Sans CJK - Light */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 200;
+  src: url(../fonts/NotoSansLight.eot);
+  src: url(../fonts/NotoSansLight.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansLight.woff) format('woff'),
+       url(../fonts/NotoSansLight.woff) format('truetype');
+}
+/* Noto Sans CJK - DemiLight */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/NotoSansDemiLight.eot);
+  src: url(../fonts/NotoSansDemiLight.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansDemiLight.woff) format('woff'),
+       url(../fonts/NotoSansDemiLight.woff) format('truetype');
+}
+/* Noto Sans CJK - Regular */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSansRegular.eot);
+  src: url(../fonts/NotoSansRegular.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansRegular.woff) format('woff'),
+       url(../fonts/NotoSansRegular.woff) format('truetype');
+}
+/* Noto Sans CJK - Medium */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/NotoSansMedium.eot);
+  src: url(../fonts/NotoSansMedium.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansMedium.woff) format('woff'),
+       url(../fonts/NotoSansMedium.woff) format('truetype');
+}
+/* Noto Sans CJK - Bold */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSansBold.eot);
+  src: url(../fonts/NotoSansBold.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansBold.woff) format('woff'),
+       url(../fonts/NotoSansBold.woff) format('truetype');
+}
+/* Noto Sans CJK - Black */
+@font-face {
+  font-family: 'ns';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/NotoSansBlack.eot);
+  src: url(../fonts/NotoSansBlack.eot?iefix) format('embedded-opentype'),
+       url(../fonts/NotoSansBlack.woff) format('woff'),
+       url(../fonts/NotoSansBlack.woff) format('truetype');
+}
